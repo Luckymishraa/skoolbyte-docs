@@ -56,7 +56,7 @@ export const schoolsContent = {
 
   screenshots: [
     {
-      src: null,
+      src: "/public/screenshots/school.png",
       alt: "Schools list page showing search bar and school cards",
       caption:
         "The Schools page — search, Create School button, and a list of school cards.",
