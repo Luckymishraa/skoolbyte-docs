@@ -154,7 +154,7 @@ export const schoolsContent = {
       description:
         "Lists every class at the school as a card, each showing student count, section count, subject count, and capacity.",
       screenshot: {
-        src: "/screenshots/detail-classes-tab.png",
+        src: "/screenshots/classes.png",
         alt: "Classes tab showing class cards with student, section, and subject counts",
         caption:
           "These classes come from the platform-level Classes & Fees setup (see the prerequisite step above).",
@@ -165,7 +165,7 @@ export const schoolsContent = {
       description:
         'Once CCTV Access is enabled via Feature Access, this tab lets you configure the integration: an Enable CCTV toggle, Camera Platform Base URL, API Key, and School Code, saved via "Save CCTV Settings".',
       screenshot: {
-        src: "/screenshots/detail-cctv-tab.png",
+        src: "/screenshots/cctv.png",
         alt: "CCTV Settings tab with Enable CCTV toggle and configuration fields",
         caption:
           "API Key and School Code come from your camera platform provider.",
@@ -181,14 +181,6 @@ export const schoolsContent = {
         caption:
           "There is no undo — double-check the school name before confirming.",
       },
-    },
-  ],
-  screenshots: [
-    {
-      src: "/screenshots/school.png",
-      alt: "Schools list page showing search bar and school cards",
-      caption:
-        "The Schools page — search, Create School button, and a list of school cards.",
     },
   ],
 

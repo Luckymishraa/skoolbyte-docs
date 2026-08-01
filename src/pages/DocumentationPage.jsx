@@ -23,11 +23,11 @@ export default function DocumentationPage({ content }) {
 
       { id: "steps", text: "Steps", show: !!content.steps?.length },
       { id: "example", text: "Example", show: !!content.example },
-      {
-        id: "screenshots",
-        text: "Screenshots",
-        show: !!content.screenshots?.length,
-      },
+      //   {
+      //     id: "screenshots",
+      //     text: "Screenshots",
+      //     show: !!content.screenshots?.length,
+      //   },
 
       {
         id: "common-errors",
@@ -94,7 +94,7 @@ export default function DocumentationPage({ content }) {
         </Section>
       )}
 
-      {content.screenshots?.length > 0 && (
+      {/* {content.screenshots?.length > 0 && (
         <Section id="screenshots" title="Screenshots">
           {content.screenshots.map((shot) => (
             <ScreenshotPlaceholder
@@ -105,9 +105,9 @@ export default function DocumentationPage({ content }) {
             />
           ))}
         </Section>
-      )}
+      )} */}
 
-      {content.bestPractices?.length > 0 && (
+      {/* {content.bestPractices?.length > 0 && (
         <Section id="best-practices" title="Best Practices">
           {content.bestPractices.map((tip) => (
             <Callout key={tip} type="tip">
@@ -115,7 +115,7 @@ export default function DocumentationPage({ content }) {
             </Callout>
           ))}
         </Section>
-      )}
+      )} */}
 
       {content.commonErrors?.length > 0 && (
         <Section id="common-errors" title="Common Errors">

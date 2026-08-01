@@ -21,15 +21,8 @@ export const navigation = [
     items: [
       { title: "Dashboard", slug: "dashboard", icon: LayoutDashboard },
       { title: "Schools", slug: "schools", icon: School },
-      {
-        title: "Classes & Fees",
-        slug: "classes-fees",
-        icon: BookOpen,
-        children: [
-          { title: "Classes", slug: "classes-fees/classes" },
-          { title: "Fee Structure", slug: "classes-fees/fees" },
-        ],
-      },
+
+      { title: "Classes & Fees", slug: "classes-fees", icon: BookOpen },
       { title: "Subjects", slug: "subjects", icon: FileText },
       { title: "Admins", slug: "admins", icon: Users },
       { title: "Reports", slug: "reports", icon: BarChart3 },
