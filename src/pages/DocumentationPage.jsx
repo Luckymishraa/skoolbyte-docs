@@ -20,16 +20,7 @@ export default function DocumentationPage({ content }) {
     const sections = [
       { id: "overview", text: "Overview", show: !!content.overview },
       { id: "purpose", text: "Purpose", show: !!content.purpose },
-      {
-        id: "navigation-path",
-        text: "Navigation Path",
-        show: !!content.navigationPath,
-      },
-      {
-        id: "permissions",
-        text: "Permissions",
-        show: !!content.permissions?.length,
-      },
+
       { id: "steps", text: "Steps", show: !!content.steps?.length },
       { id: "example", text: "Example", show: !!content.example },
       {
@@ -37,11 +28,7 @@ export default function DocumentationPage({ content }) {
         text: "Screenshots",
         show: !!content.screenshots?.length,
       },
-      {
-        id: "best-practices",
-        text: "Best Practices",
-        show: !!content.bestPractices?.length,
-      },
+
       {
         id: "common-errors",
         text: "Common Errors",
@@ -68,20 +55,23 @@ export default function DocumentationPage({ content }) {
           <p>{content.purpose}</p>
         </Section>
       )}
-
-      {content.navigationPath && (
-        <Section id="navigation-path" title="Navigation Path">
-          <Callout type="note">{content.navigationPath}</Callout>
-        </Section>
-      )}
-
-      {content.permissions?.length > 0 && (
-        <Section id="permissions" title="Permissions">
-          <PermissionsTable permissions={content.permissions} />
-        </Section>
-      )}
-
       {content.steps?.length > 0 && (
+        <Section id="steps" title="Steps">
+          {content.steps.map((step, index) => (
+            <StepCard key={step.title} number={index + 1} title={step.title}>
+              <p>{step.description}</p>
+              {step.screenshot && (
+                <ScreenshotPlaceholder
+                  src={step.screenshot.src}
+                  alt={step.screenshot.alt ?? step.title}
+                  caption={step.screenshot.caption}
+                />
+              )}
+            </StepCard>
+          ))}
+        </Section>
+      )}
+      {/* {content.steps?.length > 0 && (
         <Section id="steps" title="Steps">
           {content.steps.map((step, index) => (
             <StepCard key={step.title} number={index + 1} title={step.title}>
@@ -92,7 +82,7 @@ export default function DocumentationPage({ content }) {
             </StepCard>
           ))}
         </Section>
-      )}
+      )} */}
 
       {content.example && (
         <Section id="example" title="Example">
