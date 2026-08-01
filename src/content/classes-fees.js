@@ -18,7 +18,7 @@ export const classesFeesContent = {
     {
       title: "Create a new master class",
       description:
-        'Click "Add Class" to open the "Create Master Class" form. Fill in Class Name* (e.g. "Class 2"), an optional Display Name (defaults to the same value, editable if you want a different label shown to schools), an optional Description, and Sort Order (controls where this class appears in lists — lower numbers first). Click "Create" to save.',
+        'Click "➕ Add Class" to open the "Create Master Class" form. Fill in Class Name* (e.g. "Class 2"), an optional Display Name (defaults to the same value, editable if you want a different label shown to schools), an optional Description, and Sort Order (controls where this class appears in lists — lower numbers first). Click "Create" to save.',
       screenshot: {
         src: "/screenshots/create_classees.png",
         alt: "Create Master Class form with Class Name, Display Name, Description, and Sort Order fields",
@@ -40,7 +40,7 @@ export const classesFeesContent = {
     {
       title: "Edit or delete a master class",
       description:
-        "Use the pencil icon on a class row to edit its name, display name, description, or sort order, and the trash icon to delete the class entirely. Deleting a master class here removes it from the shared list used by all schools.",
+        "Use the ✏️ pencil icon on a class row to edit its name, display name, description, or sort order, and the  🗑️ trash icon to delete the class entirely. Deleting a master class here removes it from the shared list used by all schools.",
     },
   ],
 

@@ -29,7 +29,7 @@ export const adminsContent = {
     {
       title: "Edit an admin's name or password",
       description:
-        'Click the pencil icon in the Actions column to open the "Edit Admin" modal. Update the Name field, and optionally set a New Password — leaving the password field blank keeps their current password unchanged. Click "Save Changes" to apply.',
+        'Click the pencil ✏️ icon in the Actions column to open the "Edit Admin" modal. Update the Name field, and optionally set a New Password — leaving the password field blank keeps their current password unchanged. Click "Save Changes" to apply.',
       screenshot: {
         src: "/screenshots/admin edit.png",
         alt: "Edit Admin modal with Name and New Password fields",

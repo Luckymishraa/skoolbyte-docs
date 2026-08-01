@@ -15,7 +15,7 @@ export const subjectsContent = {
       description:
         "From the sidebar, click Subjects under Platform Administration. Use the Class dropdown at the top to select which class's subjects you want to view — the table below updates to show only that class's subjects, with columns for Subject, Code, Type, Curriculum (a preview), Contents (chapter count), Status, and Actions.",
       screenshot: {
-        src: "/screenshots/master-subjects-list.png",
+        src: "/public/screenshots/subject.png",
         alt: "Master Subjects & Curriculum page with Class dropdown and subjects table",
         caption:
           "Selecting a class (e.g. Pre-Nursery) filters the table to that class's subjects only.",
@@ -24,9 +24,9 @@ export const subjectsContent = {
     {
       title: "Create a new subject",
       description:
-        'Click "Add Subject" to open the "Create Master Subject" form. The Class field is pre-filled from whichever class was selected on the list page. Fill in Subject Name* (e.g. "Mathematics"), Code (e.g. "MATH"), and Type (e.g. Core), then optionally add a Curriculum outline as free text describing the term-wise syllabus plan.',
+        'Click "➕ Add Subject" to open the "Create Master Subject" form. The Class field is pre-filled from whichever class was selected on the list page. Fill in Subject Name* (e.g. "Mathematics"), Code (e.g. "MATH"), and Type (e.g. Core), then optionally add a Curriculum outline as free text describing the term-wise syllabus plan.',
       screenshot: {
-        src: "/screenshots/create-master-subject-form.png",
+        src: "/public/screenshots/create_subject.png",
         alt: "Create Master Subject form with Class, Subject Name, Code, Type, and Curriculum fields",
         caption:
           "Class and Subject Name are required; Code and Type help with filtering and reporting elsewhere.",
@@ -35,18 +35,18 @@ export const subjectsContent = {
     {
       title: "Add chapter contents",
       description:
-        'In the "Chapter Contents" section of the same form, click "Add Row" to add a chapter resource. Each row has a Chapter label, a Title, a content Type (e.g. PDF), a File URL / External URL, and optional notes. Add as many rows as the subject has chapters, then submit "Create Subject" to save.',
-      screenshot: {
-        src: "/screenshots/chapter-contents-rows.png",
-        alt: "Chapter Contents section with Add Row button and a chapter entry",
-        caption:
-          "Each chapter row can link to an uploaded PDF or any external URL (e.g. a video or article).",
-      },
+        'In the "Chapter Contents" section of the same form, click  "➕ Add Row" to add a chapter resource. Each row has a Chapter label, a Title, a content Type (e.g. PDF), a File URL / External URL, and optional notes. Add as many rows as the subject has chapters, then submit "Create Subject" to save.',
     },
     {
       title: "Edit or delete a subject",
       description:
-        "On the subjects table, use the pencil icon to edit a subject's details, curriculum, or chapter contents, and the trash icon to delete it entirely.",
+        "On the Subjects table, use the ✏️ pencil icon to edit a subject's details, curriculum, or chapter contents, and the 🗑️ trash icon to permanently delete the subject.",
+      screenshot: {
+        src: "/screenshots/edit_subject.png",
+        alt: "Subjects table showing pencil edit icon and trash delete icon for a subject",
+        caption:
+          "Use the ✏️ pencil icon to update a subject's information, or the 🗑️ trash icon to permanently remove the subject from the system.",
+      },
     },
   ],
 

@@ -45,7 +45,7 @@ export const schoolsContent = {
     {
       title: "Open the Schools page",
       description:
-        'From the sidebar, click Schools under the Platform Administration section. This lists every school on the platform as a card, with a search bar above and a "Create School" button in the top-right.',
+        'From the sidebar, click Schools under the Platform Administration section. This lists every school on the platform as a card, with a search bar above and a "➕ Create School" button in the top-right.',
       screenshot: {
         src: "/screenshots/school.png",
         alt: "Schools list page with search bar and school cards",
@@ -67,7 +67,7 @@ export const schoolsContent = {
     {
       title: "Edit a school's Feature Access",
       description:
-        'Click the settings icon on a school card to open the "Feature Access" modal. Toggle CCTV Access and Zoom Class Access on or off for that specific school, then click "Save Access". This is the on/off switch for whether the school can use a feature at all — the CCTV tab inside the detail dashboard (a later step) is where the connection details get configured once access is granted here.',
+        'Click the ⚙️ settings icon on a school card to open the "Feature Access" modal. Toggle CCTV Access and Zoom Class Access on or off for that specific school, then click "Save Access". This is the on/off switch for whether the school can use a feature at all — the CCTV tab inside the detail dashboard (a later step) is where the connection details get configured once access is granted here.',
       screenshot: {
         src: "/screenshots/feature_cccess.png",
         alt: "Feature Access modal with CCTV Access and Zoom Class Access toggles",
@@ -77,7 +77,7 @@ export const schoolsContent = {
     {
       title: "Open a school's detail dashboard: Overview",
       description:
-        "Click the eye (view) icon on a school card, or click the school's name/card directly, to open its detail dashboard. The Overview tab shows key stat cards (Students, Teachers, Classes, Sections, Subjects, Exams), fee collected vs. pending, and today's attendance summary.",
+        "Click the eye 👁️ (view) icon on a school card, or click the school's name/card directly, to open its detail dashboard. The Overview tab shows key stat cards (Students, Teachers, Classes, Sections, Subjects, Exams), fee collected vs. pending, and today's attendance summary.",
       screenshot: {
         src: "/screenshots/overview.png",
         alt: "School detail dashboard Overview tab with stat cards",
@@ -174,7 +174,7 @@ export const schoolsContent = {
     {
       title: "Delete a school",
       description:
-        'Click the trash icon on a school card, then confirm in the "Delete School?" dialog by clicking "Delete Permanently". This permanently deletes the school and all its data — students, teachers, fees, attendance — and cannot be undone.',
+        'Click the trash 🗑️ icon on a school card, then confirm in the "Delete School?" dialog by clicking "Delete Permanently". This permanently deletes the school and all its data — students, teachers, fees, attendance — and cannot be undone.',
       screenshot: {
         src: "/screenshots/delete-school-confirm.png",
         alt: "Delete School confirmation dialog with warning message",
