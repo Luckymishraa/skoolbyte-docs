@@ -101,7 +101,7 @@ export const schoolsContent = {
       description:
         "Lists every student enrolled at this school, with a search bar and columns for Roll No, Class, Gender, Guardian, Status, Fee Status, CCTV, and Joined date. Shows an empty state until the School Admin enrolls students.",
       screenshot: {
-        src: "/screenshots/detail-students-tab.png",
+        src: "/screenshots/students.png",
         alt: "Students tab showing search bar and empty student table",
         caption:
           '"No students found" is the expected state for a brand-new school.',
@@ -112,7 +112,7 @@ export const schoolsContent = {
       description:
         "Lists every teacher at this school, with a search bar and columns for Email, Department, Designation, Qualification, Salary, Status, and Joined date.",
       screenshot: {
-        src: "/screenshots/detail-teachers-tab.png",
+        src: "/screenshots/teacher.png",
         alt: "Teachers tab showing search bar and empty teacher table",
         caption:
           "Same empty-state pattern as Students — populates as staff are added.",
@@ -123,7 +123,7 @@ export const schoolsContent = {
       description:
         "The Fee Setup sub-tab lists fee heads configured by the school, with Amount, Frequency, and Category columns. Empty until the school defines its own fee structure.",
       screenshot: {
-        src: "/screenshots/detail-fees-setup.png",
+        src: "/screenshots/classes_fees.png",
         alt: "Fee Setup sub-tab with Fee Head, Amount, Frequency, and Category columns",
         caption:
           '"No fee structures configured by the school" until fees are set up.',
@@ -174,7 +174,7 @@ export const schoolsContent = {
     {
       title: "Delete a school",
       description:
-        'Click the trash 🗑️ icon on a school card, then confirm in the "Delete School?" dialog by clicking "Delete Permanently". This permanently deletes the school and all its data — students, teachers, fees, attendance — and cannot be undone.',
+        'Click the trash  🗑️ icon on a school card, then confirm in the "Delete School?" dialog by clicking "Delete Permanently". This permanently deletes the school and all its data — students, teachers, fees, attendance — and cannot be undone.',
       screenshot: {
         src: "/screenshots/delete-school-confirm.png",
         alt: "Delete School confirmation dialog with warning message",
