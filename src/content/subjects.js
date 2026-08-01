@@ -15,7 +15,7 @@ export const subjectsContent = {
       description:
         "From the sidebar, click Subjects under Platform Administration. Use the Class dropdown at the top to select which class's subjects you want to view — the table below updates to show only that class's subjects, with columns for Subject, Code, Type, Curriculum (a preview), Contents (chapter count), Status, and Actions.",
       screenshot: {
-        src: "g/screenshots/subject.png",
+        src: "/screenshots/subject.png",
         alt: "Master Subjects & Curriculum page with Class dropdown and subjects table",
         caption:
           "Selecting a class (e.g. Pre-Nursery) filters the table to that class's subjects only.",
