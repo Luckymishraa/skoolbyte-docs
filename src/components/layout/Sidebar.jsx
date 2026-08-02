@@ -1,14 +1,15 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { ChevronDown, X } from "lucide-react";
-import { navigation } from "../../content/navigation.js";
 
-export default function Sidebar({ isMobileDrawerOpen, onCloseMobileDrawer }) {
+export default function Sidebar({
+  role,
+  isMobileDrawerOpen,
+  onCloseMobileDrawer,
+}) {
   const [expandedIds, setExpandedIds] = useState({});
-
-  const toggleExpanded = (slug) => {
+  const toggleExpanded = (slug) =>
     setExpandedIds((prev) => ({ ...prev, [slug]: !prev[slug] }));
-  };
 
   const linkClasses = ({ isActive }) =>
     `flex items-center gap-2.5 rounded-lg px-3 py-2 text-sm transition-colors ${
@@ -19,7 +20,7 @@ export default function Sidebar({ isMobileDrawerOpen, onCloseMobileDrawer }) {
 
   const navContent = (
     <nav className="space-y-6 overflow-y-auto px-4 py-6">
-      {navigation.map((group) => (
+      {role.navigation.map((group) => (
         <div key={group.id}>
           <p className="mb-2 px-3 text-xs font-semibold uppercase tracking-wide text-gray-400 dark:text-gray-500">
             {group.section}
@@ -48,7 +49,7 @@ export default function Sidebar({ isMobileDrawerOpen, onCloseMobileDrawer }) {
                         {item.children.map((child) => (
                           <li key={child.slug}>
                             <NavLink
-                              to={`/${child.slug}`}
+                              to={`${role.basePath}/${child.slug}`}
                               onClick={onCloseMobileDrawer}
                               className={linkClasses}
                             >
@@ -61,7 +62,7 @@ export default function Sidebar({ isMobileDrawerOpen, onCloseMobileDrawer }) {
                   </>
                 ) : (
                   <NavLink
-                    to={`/${item.slug}`}
+                    to={`${role.basePath}/${item.slug}`}
                     onClick={onCloseMobileDrawer}
                     className={linkClasses}
                   >
@@ -79,12 +80,9 @@ export default function Sidebar({ isMobileDrawerOpen, onCloseMobileDrawer }) {
 
   return (
     <>
-      {/* Desktop sidebar */}
       <aside className="hidden w-64 shrink-0 border-r border-gray-200 lg:block dark:border-gray-800">
         {navContent}
       </aside>
-
-      {/* Mobile drawer */}
       {isMobileDrawerOpen && (
         <div className="fixed inset-0 z-50 lg:hidden">
           <div

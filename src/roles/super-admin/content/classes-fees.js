@@ -20,7 +20,7 @@ export const classesFeesContent = {
       description:
         'Click "➕ Add Class" to open the "Create Master Class" form. Fill in Class Name* (e.g. "Class 2"), an optional Display Name (defaults to the same value, editable if you want a different label shown to schools), an optional Description, and Sort Order (controls where this class appears in lists — lower numbers first). Click "Create" to save.',
       screenshot: {
-        src: "/screenshots/create_classees.png",
+        src: "/screenshots/super-admin/create_classees.png",
         alt: "Create Master Class form with Class Name, Display Name, Description, and Sort Order fields",
         caption:
           "Class Name is required; Display Name defaults to match it but can be edited separately.",
@@ -31,7 +31,7 @@ export const classesFeesContent = {
       description:
         'Click the ₹ (rupee) icon on a class row to open "Fee Setup" for that class. Enter the Annual Fee (₹) — the form auto-calculates suggested Monthly and Quarterly amounts from it. Choose which Payment Options (Monthly, Quarterly, Full) the class allows via checkboxes, optionally cap discounts with Max Discount (%) and Max Discount (₹), and configure Late Fee (₹) with a Late Fee Type (e.g. Fixed). Click "Save Fee Config" to apply.',
       screenshot: {
-        src: "/screenshots/fees.png",
+        src: "/screenshots/super-admin/fees.png",
         alt: "Fee Setup modal for Class 2 showing Annual Fee, payment options, discount, and late fee fields",
         caption:
           "Monthly and Quarterly amounts are calculated automatically from the Annual Fee — Monthly ₹25,000 and Quarterly ₹75,000 shown here for a ₹3,00,000 annual fee.",

@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Moon, Sun, Search, ChevronRight } from "lucide-react";
 import { useTheme } from "../../context/ThemeContext.jsx";
 
-export default function Header({ onMenuClick, isMobileDrawerOpen }) {
+export default function Header({ role, onMenuClick, isMobileDrawerOpen }) {
   const { theme, toggleTheme } = useTheme();
   const location = useLocation();
 
@@ -27,11 +27,14 @@ export default function Header({ onMenuClick, isMobileDrawerOpen }) {
           {isMobileDrawerOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
 
-        <Link to="/" className="flex items-center gap-2 font-semibold">
+        <Link
+          to={role.basePath}
+          className="flex items-center gap-2 font-semibold"
+        >
           <span className="rounded bg-blue-600 px-1.5 py-0.5 text-sm text-white">
-            SB
+            {role.badge}
           </span>
-          Skoolbyte Docs
+          {role.label}
         </Link>
 
         <nav className="hidden items-center gap-1.5 text-sm text-gray-500 md:flex dark:text-gray-400">

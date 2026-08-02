@@ -13,8 +13,12 @@ import PrevNext from "../components/ui/PrevNext.jsx";
 import { getPrevNext } from "../utils/getPrevNext.js";
 
 export default function DocumentationPage({ content }) {
-  const { setHeadings } = useOutletContext();
-  const { prev, next } = getPrevNext(content.slug);
+  const { setHeadings, role } = useOutletContext();
+  const { prev, next } = getPrevNext(
+    content.slug,
+    role.navigation,
+    role.basePath,
+  );
 
   useEffect(() => {
     const sections = [

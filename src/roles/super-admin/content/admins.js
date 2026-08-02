@@ -15,7 +15,7 @@ export const adminsContent = {
       description:
         "From the sidebar, click Admins under Platform Administration. The page shows a table of every School Admin, with columns for Admin (name), Email, School, Status, and Actions. A note at the top reminds you that new admins are created via the Schools page, not here.",
       screenshot: {
-        src: "/screenshots/admin.png",
+        src: "/screenshots/super-admin/admin.png",
         alt: "School Admins list with Admin, Email, School, Status, and Actions columns",
         caption:
           "The Admins page is read/manage only — creation happens on the Schools page.",
@@ -31,7 +31,7 @@ export const adminsContent = {
       description:
         'Click the pencil ✏️ icon in the Actions column to open the "Edit Admin" modal. Update the Name field, and optionally set a New Password — leaving the password field blank keeps their current password unchanged. Click "Save Changes" to apply.',
       screenshot: {
-        src: "/screenshots/admin edit.png",
+        src: "/screenshots/super-admin/admin edit.png",
         alt: "Edit Admin modal with Name and New Password fields",
         caption:
           'Leaving "New Password" blank preserves the admin\'s existing password.',
