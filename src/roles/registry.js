@@ -31,7 +31,7 @@ export const roles = [
     pages: [
       { slug: "students", content: studentsContent },
       { slug: "fees", content: feesContent },
-      { slug: "teacher", content: teacherContent },
+      { slug: "teachers", content: teacherContent },
     ], // filled in as School content is written
   },
   //   {
