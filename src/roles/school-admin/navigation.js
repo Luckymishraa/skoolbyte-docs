@@ -5,73 +5,172 @@ import {
   ClipboardList,
   UserPlus,
   BookOpen,
-  ClipboardCheck as HomeworkIcon,
-  Calendar,
+  ClipboardCheck,
+  CalendarDays,
   CalendarCheck,
   CalendarX,
-  DollarSign,
+  IndianRupee,
+  BusFront,
   MessageSquare,
   Image,
   Settings,
-  LifeBuoy,
+  CircleHelp,
+  LogOut,
 } from "lucide-react";
 
 export const navigation = [
   {
     id: "main",
     section: "Main",
-    items: [{ title: "Dashboard", slug: "dashboard", icon: LayoutDashboard }],
+    items: [
+      {
+        title: "Dashboard",
+        slug: "dashboard",
+        icon: LayoutDashboard,
+      },
+    ],
   },
+
   {
     id: "people",
     section: "People",
     items: [
-      { title: "Students", slug: "students", icon: GraduationCap },
-      { title: "Teachers", slug: "teacher", icon: UserCog },
-      { title: "Enquiries", slug: "enquiries", icon: ClipboardList },
-      { title: "Admissions", slug: "admissions", icon: UserPlus },
+      {
+        title: "Students",
+        slug: "students",
+        icon: GraduationCap,
+      },
+      {
+        title: "Teachers",
+        slug: "teachers",
+        icon: UserCog,
+      },
+      {
+        title: "Enquiries",
+        slug: "enquiries",
+        icon: ClipboardList,
+      },
+      {
+        title: "Admissions",
+        slug: "admissions",
+        icon: UserPlus,
+      },
     ],
   },
+
   {
     id: "academics",
     section: "Academics",
     items: [
-      { title: "Academics", slug: "academics", icon: BookOpen },
-      { title: "Home Work", slug: "assignments", icon: HomeworkIcon },
-      { title: "Calendar", slug: "calendar", icon: Calendar },
+      {
+        title: "Academics",
+        slug: "academics",
+        icon: BookOpen,
+      },
+      {
+        title: "Home Work",
+        slug: "home-work",
+        icon: ClipboardCheck,
+      },
+      {
+        title: "Calendar",
+        slug: "calendar",
+        icon: CalendarDays,
+      },
     ],
   },
+
   {
-    id: "hr-attendance",
+    id: "attendance",
     section: "HR & Attendance",
     items: [
-      { title: "Attendance", slug: "attendance", icon: CalendarCheck },
-      { title: "Leaves", slug: "leaves", icon: CalendarX },
+      {
+        title: "Attendance",
+        slug: "attendance",
+        icon: CalendarCheck,
+      },
+      {
+        title: "Leaves",
+        slug: "leaves",
+        icon: CalendarX,
+      },
     ],
   },
+
   {
     id: "finance",
     section: "Finance",
-    items: [{ title: "Fees", slug: "fees", icon: DollarSign }],
+    items: [
+      {
+        title: "Fees",
+        slug: "fees",
+        icon: IndianRupee,
+      },
+    ],
   },
+
+  {
+    id: "operations",
+    section: "Operations",
+    items: [
+      {
+        title: "Transport",
+        slug: "transport",
+        icon: BusFront,
+      },
+    ],
+  },
+
   {
     id: "communication",
     section: "Communication",
     items: [
-      { title: "Communication", slug: "communication", icon: MessageSquare },
+      {
+        title: "Communication",
+        slug: "communication",
+        icon: MessageSquare,
+      },
     ],
   },
+
   {
-    id: "gallery-reports",
+    id: "gallery",
     section: "Gallery & Reports",
-    items: [{ title: "Gallery", slug: "gallery", icon: Image }],
+    items: [
+      {
+        title: "Gallery",
+        slug: "gallery",
+        icon: Image,
+      },
+    ],
   },
+
   {
     id: "system",
     section: "System",
     items: [
-      { title: "Settings", slug: "settings", icon: Settings },
-      { title: "Support", slug: "support", icon: LifeBuoy },
+      {
+        title: "Settings",
+        slug: "settings",
+        icon: Settings,
+      },
+      {
+        title: "Support",
+        slug: "support",
+        icon: CircleHelp,
+      },
+    ],
+  },
+
+  {
+    id: "account",
+    section: "",
+    items: [
+      {
+        title: "Logout",
+        slug: "logout",
+        icon: LogOut,
+      },
     ],
   },
 ];

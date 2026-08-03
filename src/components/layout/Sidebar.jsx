@@ -12,17 +12,17 @@ export default function Sidebar({
     setExpandedIds((prev) => ({ ...prev, [slug]: !prev[slug] }));
 
   const linkClasses = ({ isActive }) =>
-    `flex items-center gap-2.5 rounded-lg px-3 py-2 text-sm transition-colors ${
+    `flex items-center gap-3 rounded-xl px-3 py-2.5 text-base font-medium transition-all duration-200 ${
       isActive
         ? "bg-blue-50 font-medium text-blue-600 dark:bg-blue-500/10 dark:text-blue-400"
         : "text-gray-600 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-100"
     }`;
 
   const navContent = (
-    <nav className="space-y-6 overflow-y-auto px-4 py-6">
+    <nav className="space-y-8 px-5 py-6">
       {role.navigation.map((group) => (
         <div key={group.id}>
-          <p className="mb-2 px-3 text-xs font-semibold uppercase tracking-wide text-gray-400 dark:text-gray-500">
+          <p className="mb-3 px-3 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">
             {group.section}
           </p>
           <ul className="space-y-1">
@@ -36,7 +36,7 @@ export default function Sidebar({
                       className="flex w-full items-center justify-between gap-2.5 rounded-lg px-3 py-2 text-sm text-gray-600 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-100"
                     >
                       <span className="flex items-center gap-2.5">
-                        <item.icon size={16} />
+                        <item.icon size={22} strokeWidth={2} />
                         {item.title}
                       </span>
                       <ChevronDown
@@ -80,7 +80,7 @@ export default function Sidebar({
 
   return (
     <>
-      <aside className="hidden w-64 shrink-0 border-r border-gray-200 lg:block dark:border-gray-800">
+      <aside className="sticky top-16 hidden h-[calc(100vh-4rem)] w-72 shrink-0 overflow-y-auto border-r border-gray-200 bg-white lg:block dark:border-gray-800 dark:bg-gray-950">
         {navContent}
       </aside>
       {isMobileDrawerOpen && (
