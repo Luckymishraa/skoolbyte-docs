@@ -7,6 +7,8 @@ import { schoolsContent } from "./super-admin/content/schools.js";
 import { classesFeesContent } from "./super-admin/content/classes-fees.js";
 import { subjectsContent } from "./super-admin/content/subjects.js";
 import { adminsContent } from "./super-admin/content/admins.js";
+import { enquiriesContent } from "./school-admin/content/enquiries.js";
+import { admissionsContent } from "./school-admin/content/admissions.js";
 
 export const roles = [
   {
@@ -32,6 +34,8 @@ export const roles = [
       { slug: "students", content: studentsContent },
       { slug: "fees", content: feesContent },
       { slug: "teachers", content: teacherContent },
+      { slug: "enquiries", content: enquiriesContent },
+      { slug: "admissions", content: admissionsContent },
     ], // filled in as School content is written
   },
   //   {
