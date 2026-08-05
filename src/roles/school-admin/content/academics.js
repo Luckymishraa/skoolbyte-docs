@@ -15,7 +15,7 @@ export const academicsContent = {
       description:
         "From the sidebar, click Academics under Academics. The page shows the Current Year and nine tabs, scrollable with left/right arrows: Academic Year, Classes, Sections, Subjects, Subject Allocation, Class Teachers, Timetable, Periods & Days, and Promotion.",
       screenshot: {
-        src: "/screenshots/school/academics-main.png",
+        src: "/screenshots/school-admin/academics/academic_mainpage.png",
         alt: "Academic Management page showing tab navigation and Current Year 2026-27",
         caption:
           "The tab bar scrolls — use the arrow buttons on either side to see all nine sections.",
@@ -26,7 +26,7 @@ export const academicsContent = {
       description:
         'Click "How it Works" to open the "Academics Module — How it Works" guide, covering Module Overview, Setup Hierarchy, Classes & Sections, Subjects & Allocation, Timetable Builder, Student Promotion, and Pro Tips.',
       screenshot: {
-        src: "/screenshots/school/academics-how-it-works.png",
+        src: "/screenshots/school-admin/academics/academic_hoeitworks.png",
         alt: "Academics Module How it Works guide showing Module Overview with Classes & Sections, Subject Mapping, Timetable, and Promotions cards",
         caption:
           "The guide frames the setup order as: Classes & Sections → Subject Mapping → Timetable → Promotions.",
@@ -37,7 +37,7 @@ export const academicsContent = {
       description:
         'On the Academic Year tab, view all configured years as cards (Start Date, End Date, Status — Active or Upcoming). Click "+ Add Year" to open "Add Academic Year": enter Year Name* (e.g. "2025-26"), Start Date*, End Date*, and Status. An upcoming year can later be made current via "Set Active."',
       screenshot: {
-        src: "/screenshots/school/academics-year-list.png",
+        src: "/screenshots/school-admin/academics/academic_Add.png",
         alt: "Academic Years tab showing 2027-28 Upcoming and 2026-27 Active cards",
         caption:
           "Only one academic year is Active at a time — the others show as Upcoming or past.",
@@ -48,21 +48,32 @@ export const academicsContent = {
       description:
         'Switch to the Classes tab to see the Class & Section Hierarchy — each class card shows its section count, capacity, and assigned class teacher. Click "+ Add Class" to open a form: Class Name* (dropdown, e.g. "Nursery (Pre-Nursery)"), Display Name, Class Teacher, Sections (on create — e.g. "B"), and Capacity.',
       screenshot: {
-        src: "/screenshots/school/academics-classes-hierarchy.png",
+        src: "/screenshots/school-admin/academics/academic_add_classes.png",
         alt: "Class & Section Hierarchy showing Class 1, Class 2, LKG, Pre-Nursery, and UKG cards",
         caption:
           "6 classes configured — each shows how many sections exist under it and total capacity.",
       },
     },
     {
-      title: "Edit or delete a class",
+      title: "Edit a class",
       description:
-        'Click the pencil icon on a class card to open "Edit Class" and update its Class Name, Display Name, Class Teacher, Sections, or Capacity, then "Update." Click the trash icon to delete — a confirmation warns this permanently removes the data.',
+        'Click the pencil icon on the desired class card to open the "Edit Class" modal. Update the Class Name, Display Name, Class Teacher, Sections, or Capacity as needed, then click "Update" to save your changes.',
       screenshot: {
-        src: "/screenshots/school/academics-edit-class-modal.png",
-        alt: "Edit Class modal for Class 2 with Display Name, Class Teacher, Sections, and Capacity fields",
+        src: "/screenshots/school-admin/academics/academic_classes_ediclass.png",
+        alt: "Edit Class modal with fields for Class Name, Display Name, Class Teacher, Sections, and Capacity",
         caption:
-          "Deleting a class is irreversible — check its section and student counts first.",
+          "Review all details before updating to ensure the class information is accurate.",
+      },
+    },
+    {
+      title: "Delete a class",
+      description:
+        'Click the trash icon on the class card you want to remove. A confirmation dialog will appear, warning that the action is permanent. Review the class details and click "Delete" to permanently remove the class.',
+      screenshot: {
+        src: "/screenshots/school-admin/academics/academic_classes_deleteclass.png",
+        alt: "Delete Class confirmation dialog",
+        caption:
+          "Deleting a class is irreversible. Ensure there are no active sections or enrolled students before proceeding.",
       },
     },
     {
@@ -70,21 +81,32 @@ export const academicsContent = {
       description:
         'Switch to the Sections tab to see every section as a card (e.g. "Class 1 - A"), showing enrollment vs. max strength (e.g. "0/40"), assigned teacher, and Room No. Click "+ Add Section" to open a form: Class*, Section Name*, Max Strength, Class Teacher, and Room Number.',
       screenshot: {
-        src: "/screenshots/school/academics-sections-list.png",
+        src: "/screenshots/school-admin/academics/academic_section_addsection.png",
         alt: "Section Management grid showing Class 1-A, Class 1-B, Class 2-A, LKG-A, Nursery-A, and Pre-Nursery-B cards",
         caption:
           '"No teacher assigned" appears until a class teacher is set for that specific section.',
       },
     },
     {
-      title: "Add or edit a section",
+      title: "Add a section",
       description:
-        'Fill in the "Add Section" form (Class, Section Name, Max Strength, Class Teacher, Room Number) and click "Save." Use the pencil icon on an existing section card to open "Edit Section" with the same fields pre-filled, then "Update."',
+        'Open the "Add Section" form and enter the required details, including Class, Section Name, Max Strength, Class Teacher, and Room Number. Once all information is complete, click "Save" to create the new section.',
       screenshot: {
-        src: "/screenshots/school/academics-add-section-form.png",
-        alt: "Add Section form with Class 1, Section Name B, Max Strength 40, Class Teacher, and Room Number R-101",
+        src: "/screenshots/school-admin/academics/academic_section_addsection.png",
+        alt: "Add Section form with fields for Class, Section Name, Max Strength, Class Teacher, and Room Number",
         caption:
-          "A section's Class Teacher here is independent from that class's overall Class Teacher on the Classes tab — sections can have their own.",
+          "Each section belongs to a class and can have its own Class Teacher and room assignment.",
+      },
+    },
+    {
+      title: "Edit a section",
+      description:
+        'Click the pencil icon on the section card to open the "Edit Section" modal. Update the Class, Section Name, Max Strength, Class Teacher, or Room Number as needed, then click "Update" to save your changes.',
+      screenshot: {
+        src: "/screenshots/school-admin/academics/academic_section_editsection.png",
+        alt: "Edit Section modal with fields for Class, Section Name, Max Strength, Class Teacher, and Room Number",
+        caption:
+          "Review the updated details before saving to keep section information accurate.",
       },
     },
     {
@@ -92,10 +114,21 @@ export const academicsContent = {
       description:
         'Switch to the Subjects tab — labeled "Subjects (Managed by Super Admin)." This is a read-only view of the master subject list (Class, Subject, Code, Type, Curriculum preview, Contents count, Status) — the same data set up centrally by the Super Admin.',
       screenshot: {
-        src: "/screenshots/school/academics-subjects-list.png",
+        src: "/screenshots/school-admin/academics/academic_subject.png",
         alt: "Subjects tab showing General Knowledge, Science, Mathematics, and English rows across different classes",
         caption:
           'The "Managed by Super Admin" label is a hint — subjects themselves aren\'t created here.',
+      },
+    },
+    {
+      title: "Delete a section",
+      description:
+        'Click the trash icon on the section card you want to remove. A confirmation dialog will appear asking you to verify the action. Click "Delete" to permanently remove the section.',
+      screenshot: {
+        src: "/screenshots/school-admin/academics/academic_section_deletesection.png",
+        alt: "Delete Section confirmation dialog",
+        caption:
+          "Deleting a section is permanent. Make sure there are no enrolled students or active records associated with it before proceeding.",
       },
     },
     {
@@ -103,7 +136,7 @@ export const academicsContent = {
       description:
         'Switch to the Subject Allocation tab to see a table of Class/Section/Subject/Teacher combinations. Click "+ Allocate Subject" to open a form: Class - Section* (e.g. "Class 2 - A"), Subject*, Teacher, and Periods Per Week. This is what actually assigns who teaches what, to which section.',
       screenshot: {
-        src: "/screenshots/school/academics-allocate-subject-form.png",
+        src: "/screenshots/school-admin/academics/academic_allocatesubjet_add.png",
         alt: "Allocate Subject form with Class 2 - A, Science, Rekha Verma, and 5 Periods Per Week",
         caption:
           "Periods Per Week here feeds directly into how many timetable slots that subject can be scheduled.",
@@ -114,7 +147,7 @@ export const academicsContent = {
       description:
         'Click the pencil icon on an allocation row to open "Edit Allocation" — update Class - Section, Subject, Teacher, or Periods Per Week, then click "Update."',
       screenshot: {
-        src: "/screenshots/school/academics-edit-allocation-modal.png",
+        src: "/screenshots/school-admin/academics/academic_allocatesubject_edit.png",
         alt: "Edit Allocation modal for Class 1 - A, General Knowledge, Kamalpreet Sharma, 5 periods per week",
         caption:
           "Changing the Teacher here reassigns who's responsible for that subject in that section going forward.",
@@ -125,7 +158,7 @@ export const academicsContent = {
       description:
         'Switch to the Class Teachers tab to see each teacher with their Class Teacher (whole-class) and Section Teacher (specific section) assignments, plus a total Assignments count. Click "+ Assign Teacher" to open a form: Assignment Type* (e.g. "Class Teacher"), Teacher*, and Class*.',
       screenshot: {
-        src: "/screenshots/school/academics-class-teachers-list.png",
+        src: "/screenshots/school-admin/academics/academic_Classteacher_mainpage.png",
         alt: "Class Teacher tab showing Sushmita Mehra with 2 Assignments (Class 2 as Class Teacher, Class 1-B as Section Teacher)",
         caption:
           "A teacher can hold both a Class Teacher role and separate Section Teacher roles simultaneously.",
@@ -136,7 +169,7 @@ export const academicsContent = {
       description:
         'Switch to the Timetable tab, select a Class and Section, then view the weekly grid (Days × Periods). Click "Edit" to enter edit mode, then click any empty "+ Assign" slot to open "Assign Subject" — pick a subject/teacher pairing from those already allocated, or "Clear Slot" to remove one. Click "Save" to apply changes, "Cancel" to discard, or "Export PDF" to download.',
       screenshot: {
-        src: "/screenshots/school/academics-timetable-edit-mode.png",
+        src: "/screenshots/school-admin/academics/academic_timetable_mainpage.png",
         alt: "Timetable Management in edit mode for Class 1-A with General Knowledge assigned across Monday-Thursday Period 1",
         caption:
           'Edit mode shows "Cancel" and "Save" buttons; view mode (after saving) shows "Edit" and "Export PDF" instead.',
@@ -147,7 +180,7 @@ export const academicsContent = {
       description:
         'Clicking "+ Assign" on a slot opens "Assign Subject" for that Day and time — showing "Clear Slot" (remove current assignment) plus a list of subjects already allocated to that class-section (via Subject Allocation), each showing the teacher and periods/week.',
       screenshot: {
-        src: "/screenshots/school/academics-assign-subject-modal.png",
+        src: "/screenshots/school-admin/academics/academic_timetable_assign.png",
         alt: "Assign Subject modal for Monday 09:10 showing Clear Slot and General Knowledge with Kamalpreet Sharma, 5 pds/wk",
         caption:
           "Only subjects already set up via Subject Allocation appear here — allocate the subject first if it's missing.",
@@ -158,7 +191,7 @@ export const academicsContent = {
       description:
         'Switch to the Periods & Days tab. The Period Schedule lists every period (Assembly, Period 1-6, Short Break, Lunch Break) with times, editable/deletable via the pencil/trash icons. Click "+ Add Period" to open a form: Period Name*, Start Time*, End Time*, Type (e.g. Class), and Sequence. Working Days on the right lets you toggle Monday–Saturday on/off.',
       screenshot: {
-        src: "/screenshots/school/academics-periods-days.png",
+        src: "/screenshots/school-admin/academics/academic_periodsday_aminpage.png",
         alt: "Period & Working Days Setup showing Assembly through Period 6 with times, and Monday-Saturday toggles all enabled",
         caption:
           "Disabling a Working Day here (e.g. turning off Saturday) removes it as a schedulable day across the Timetable.",
@@ -169,7 +202,7 @@ export const academicsContent = {
       description:
         'Switch to the Promotion tab for the 3-step Promotion & Class Progression flow. Step 1 (Select Source): choose a From Class and Section, then "Fetch Students." Step 2 (Select Students): check which fetched students to promote. Step 3 (Promote To): choose a Target Class and Section, review the Summary (Total Selected, Move To), then click "Promote Students."',
       screenshot: {
-        src: "/screenshots/school/academics-promotion-flow.png",
+        src: "/screenshots/school-admin/academics/academic_promotion_add.png",
         alt: "Promotion & Class Progression showing Class 1-A students Riya Kumari and Aniket Mehra being moved to Class 2-A",
         caption:
           "This is typically run once per year, at the end of the academic session, before setting the next year Active.",

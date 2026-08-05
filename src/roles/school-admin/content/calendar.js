@@ -15,9 +15,10 @@ export const calendarContent = {
       description:
         'From the sidebar, click Calendar under Academics. The page shows a month grid by default, an event count for the month (e.g. "2 events this month"), a "How it Works" guide, a Calendar/Grid view toggle, and an "Add Event" button.',
       screenshot: {
-        src: "/screenshots/school/calendar-month-view.png",
+        src: "/screenshots/school-admin/calender/calender_mainpage.png",
         alt: "Calendar page for August 2026 with Independence Day and Annual Function events shown",
-        caption: "Holidays and events are color-coded on the day they fall — red for holidays, green for activities in this example.",
+        caption:
+          "Holidays and events are color-coded on the day they fall — red for holidays, green for activities in this example.",
       },
     },
     {
@@ -25,9 +26,10 @@ export const calendarContent = {
       description:
         'Click "How it Works" to open the "Calendar Module — How it Works" guide, covering Module Overview, Adding Events, Calendar vs Grid View, Event Types & Colors, and Pro Tips.',
       screenshot: {
-        src: "/screenshots/school/calendar-how-it-works.png",
+        src: "/screenshots/school-admin/calender/calender_howitworks.png",
         alt: "Calendar Module How it Works guide showing Module Overview with School Calendar, Event Types, Dual Views, and Real-time Updates cards",
-        caption: 'The guide notes: "Changes reflect instantly on student/teacher portals" — no separate publish step needed.',
+        caption:
+          'The guide notes: "Changes reflect instantly on student/teacher portals" — no separate publish step needed.',
       },
     },
     {
@@ -35,9 +37,10 @@ export const calendarContent = {
       description:
         'Click "Add Event" to open the "Add Event" form. Fill in Title*, Date*, Type (dropdown, e.g. Activity), Location, and Description, then click "Create Event."',
       screenshot: {
-        src: "/screenshots/school/calendar-add-event-form.png",
+        src: "/screenshots/school-admin/calender/calender_Addevent.png",
         alt: "Add Event form with Title Annual Function, Date 31/08/2026, Type Activity, Location School Campus, Description",
-        caption: "Required fields are Title and Date — Type, Location, and Description are optional context.",
+        caption:
+          "Required fields are Title and Date — Type, Location, and Description are optional context.",
       },
     },
     {

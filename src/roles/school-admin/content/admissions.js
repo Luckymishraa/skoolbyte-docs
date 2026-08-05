@@ -15,7 +15,7 @@ export const admissionsContent = {
       description:
         'From the sidebar, click Admissions under People. The page has two tabs — Admission Records (a table of submitted applications with Name, Application number, Class, Status, Guardian, Referred By, and Date) and Online Admission (portal settings) — plus a "New Admission" button and, on Admission Records, a search bar, status filter, and "Export" button.',
       screenshot: {
-        src: "/public/screenshots/school-admin/admissions/admission_mainpage.png",
+        src: "/screenshots/school-admin/admissions/admission_mainpage.png",
         alt: "Admission Records tab showing a table with one Pending application",
         caption:
           'Kavya Mishra\'s application (ADM260001) shown here with status "Pending."',
@@ -26,7 +26,7 @@ export const admissionsContent = {
       description:
         'Click "New Admission" to open the "New Admission Application" form — a 5-step wizard. Step 1 collects First Name*, Last Name*, Date of Birth*, Gender*, Blood Group, Religion, Caste, and Category, then "Next" continues through the remaining steps (academic details, guardian details, address, and document/review).',
       screenshot: {
-        src: "/public/screenshots/school-admin/admissions/admission_Add.png",
+        src: "/screenshots/school-admin/admissions/admission_Add.png",
         alt: "New Admission Application form, step 1 of 5",
         caption:
           "Steps 2–5 continue with academic, guardian, address, and final review details before submission.",
@@ -37,7 +37,7 @@ export const admissionsContent = {
       description:
         'Click an application row (or its eye icon) to open its full details — grouped into Student Details, Academic Details, Parent/Guardian Details, and Address. From here, click "Reject Application" or "Approve Application" to move the admission out of Pending status.',
       screenshot: {
-        src: "/public/screenshots/school-admin/admissions/admission_view.png",
+        src: "/screenshots/school-admin/admissions/admission_view.png",
         alt: "Admission application detail view with Reject and Approve buttons",
         caption:
           "This is the same detail view whether the application arrived via New Admission or the public Online Admission Portal.",
@@ -48,7 +48,7 @@ export const admissionsContent = {
       description:
         'Switch to the Online Admission tab to manage public self-service applications. Copy the Public Admission Link (or click the eye icon to preview it) to share with prospective families. Under Class Availability for Public Admission, toggle which classes are currently open for applications and see live seat counts (e.g. "0/40 seats"). Under Auto-Notifications, choose whether to Send SMS on application received, Send Email on status change, and/or Send WhatsApp updates.',
       screenshot: {
-        src: "/public/screenshots/school-admin/admissions/admission_onlineadmission .png",
+        src: "/screenshots/school-admin/admissions/admission_onlineadmission .png",
         alt: "Online Admission Portal tab with public link, class availability toggles, and auto-notification checkboxes",
         caption:
           "Turning off a class's toggle here removes it from the public application form without deleting anything.",
