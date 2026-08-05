@@ -110,6 +110,6 @@ export const feesContent = {
 
   relatedModules: [
     { title: "Students", slug: "students" },
-    { title: "Teachers", slug: "teacher" },
+    { title: "Teachers", slug: "teachers" },
   ],
 };

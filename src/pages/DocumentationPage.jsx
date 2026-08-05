@@ -137,7 +137,10 @@ export default function DocumentationPage({ content }) {
         </Section>
       )}
 
-      <RelatedModules modules={content.relatedModules} />
+      <RelatedModules
+        modules={content.relatedModules}
+        basePath={role.basePath}
+      />
       <PrevNext prev={prev} next={next} />
     </article>
   );

@@ -127,7 +127,7 @@ export const studentsContent = {
   ],
 
   relatedModules: [
-    { title: "Teachers", slug: "teacher" },
+    { title: "Teachers", slug: "teachers" },
     { title: "Attendance", slug: "attendance" },
     { title: "Fees", slug: "fees" },
   ],

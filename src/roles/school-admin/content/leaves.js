@@ -151,7 +151,7 @@ export const leavesContent = {
   ],
 
   relatedModules: [
-    { title: "Teachers", slug: "teacher" },
+    { title: "Teachers", slug: "teachers" },
     { title: "Attendance", slug: "attendance" },
   ],
 };

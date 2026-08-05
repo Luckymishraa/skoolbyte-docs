@@ -104,7 +104,7 @@ export const attendanceContent = {
   ],
 
   relatedModules: [
-    { title: "Teachers", slug: "teacher" },
+    { title: "Teachers", slug: "teachers" },
     { title: "Students", slug: "students" },
     { title: "Leaves", slug: "leaves" },
   ],

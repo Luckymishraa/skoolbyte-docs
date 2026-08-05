@@ -255,7 +255,7 @@ export const academicsContent = {
 
   relatedModules: [
     { title: "Students", slug: "students" },
-    { title: "Teacher", slug: "teacher" },
+    { title: "Teacher", slug: "teachers" },
     { title: "Fees", slug: "fees" },
   ],
 };

@@ -1,6 +1,6 @@
 export const teacherContent = {
   title: "Teachers",
-  slug: "teacher",
+  slug: "teachers",
   category: "People",
 
   overview:
