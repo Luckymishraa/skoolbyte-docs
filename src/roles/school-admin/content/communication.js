@@ -21,7 +21,7 @@ export const communicationContent = {
       description:
         "The Dashboard provides a quick overview of communication activity. View the total number of messages sent, delivered, read, and failed. Below the summary cards, review recently created templates, recent message activity, and the currently available delivery channels.",
       screenshot: {
-        src: "/public/screenshots/school-admin/communication/comunication_dashoard.png",
+        src: "/screenshots/school-admin/communication/comunication_dashoard.png",
         alt: "Communication dashboard showing message statistics, templates, recent activity, and available channels",
         caption:
           "Use the Dashboard to quickly monitor message activity and available communication channels.",
@@ -33,7 +33,7 @@ export const communicationContent = {
       description:
         "Open the **Send Message** tab to send announcements to students, teachers, parents, or a specific class. Select the target audience, choose the delivery channel and priority, enter a title and message body, then click **Send Message**.",
       screenshot: {
-        src: "/public/screenshots/school-admin/communication/communication_crateannouncement.png",
+        src: "/screenshots/school-admin/communication/communication_crateannouncement.png",
         alt: "Send Broadcast Message form with audience selection, channel, priority, title, and message body",
         caption:
           "Broadcast messages can be sent to the entire school or a selected audience.",
@@ -45,7 +45,7 @@ export const communicationContent = {
       description:
         "Switch to the Templates tab to view all available message templates. Each template displays its name, internal code, subject, message body, template type, and supported delivery channels. These templates are reused for recurring school notifications.",
       screenshot: {
-        src: "/public/screenshots/school-admin/communication/communication_teplate_amiapge.png",
+        src: "/screenshots/school-admin/communication/communication_teplate_amiapge.png",
         alt: "Templates tab displaying Exam Result, Attendance, Fee Payment, and Assignment templates",
         caption:
           "Templates save time by providing reusable message formats for common school events.",
@@ -57,7 +57,7 @@ export const communicationContent = {
       description:
         "Click **New Template** to create a reusable message template. Enter a Name, Code, Subject, and Message Body using placeholders such as {{student_name}} or {{guardian_name}} where appropriate. Select the Template Type and Delivery Channel, then click **Create**.",
       screenshot: {
-        src: "/public/screenshots/school-admin/communication/communication_createtemplate.png",
+        src: "/screenshots/school-admin/communication/communication_createtemplate.png",
         alt: "Create Template dialog showing name, code, subject, body, type, and channel fields",
         caption:
           "Placeholder variables are automatically replaced with real student, guardian, or school information when messages are sent.",
@@ -75,7 +75,7 @@ export const communicationContent = {
       description:
         "Open the Message Log tab to view every message sent from the Communication Hub. The log displays the delivery status, message title, recipient, delivery channel, and the date and time each message was sent.",
       screenshot: {
-        src: "/public/screenshots/school-admin/communication/communication_messagelog_mainpage.png",
+        src: "/screenshots/school-admin/communication/communication_messagelog_mainpage.png",
         alt: "Message Log displaying sent messages with recipient, status, channel, and timestamp",
         caption:
           "Use the Message Log to audit communication history and verify successful message delivery.",
@@ -87,7 +87,7 @@ export const communicationContent = {
       description:
         "Click the **How it Works** button to open the built-in tutorial. The guide explains the Communication module, message broadcasting, templates, delivery tracking, and best practices through a step-by-step walkthrough.",
       screenshot: {
-        src: "/public/screenshots/school-admin/communication/communication_hoeitworks.png",
+        src: "/screenshots/school-admin/communication/communication_hoeitworks.png",
         alt: "Communication Module How it Works tutorial dialog",
         caption:
           "The built-in guide is useful for first-time administrators learning the Communication module.",
