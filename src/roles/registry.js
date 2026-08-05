@@ -9,6 +9,12 @@ import { subjectsContent } from "./super-admin/content/subjects.js";
 import { adminsContent } from "./super-admin/content/admins.js";
 import { enquiriesContent } from "./school-admin/content/enquiries.js";
 import { admissionsContent } from "./school-admin/content/admissions.js";
+import { calendarContent } from "./school-admin/content/calendar.js";
+import { communicationContent } from "./school-admin/content/communication.js";
+import { leavesContent } from "./school-admin/content/leaves.js";
+import { academicsContent } from "./school-admin/content/academics.js";
+import { attendanceContent } from "./school-admin/content/attendance.js";
+import { transportContent } from "./school-admin/content/transport.js";
 
 export const roles = [
   {
@@ -36,6 +42,12 @@ export const roles = [
       { slug: "teachers", content: teacherContent },
       { slug: "enquiries", content: enquiriesContent },
       { slug: "admissions", content: admissionsContent },
+      { slug: "calendar", content: calendarContent },
+      { slug: "communication", content: communicationContent },
+      { slug: "attendance", content: attendanceContent },
+      { slug: "transport", content: transportContent },
+      { slug: "leaves", content: leavesContent },
+      { slug: "academics", content: academicsContent },
     ], // filled in as School content is written
   },
   //   {
