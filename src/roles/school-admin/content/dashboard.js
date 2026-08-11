@@ -15,7 +15,7 @@ export const dashboardContent = {
       description:
         "After logging in, the Dashboard opens automatically. At the top you'll find the current date, a personalized welcome message, the school name, a global search bar, and an 'Add Student' shortcut. Just below these are four summary cards showing Total Students, Today's Attendance, Fee Defaulters, and Assignments. These cards give you an instant overview of your school's current status without opening individual modules.",
       screenshot: {
-        src: "/public/screenshots/school-admin/dashboard/schooladmin_dashboard.png",
+        src: "/screenshots/school-admin/dashboard/schooladmin_dashboard.png",
         alt: "School Admin Dashboard overview showing statistics cards and top navigation",
         caption:
           "The dashboard provides a quick summary of your school's daily activity immediately after login.",

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Outlet, useParams } from "react-router-dom";
 import Sidebar from "./Sidebar.jsx";
 import Header from "./Header.jsx";
-import TableOfContents from "./TableOfContents.jsx";
+// import TableOfContents from "./TableOfContents.jsx";
 import { roles } from "../../roles/registry.js";
 
 export default function DocsLayout() {
@@ -34,7 +34,7 @@ export default function DocsLayout() {
             <Outlet context={{ setHeadings, role }} />
           </div>
         </main>
-        <TableOfContents headings={headings} />
+        {/* <TableOfContents headings={headings} /> */}
       </div>
     </div>
   );

@@ -7,9 +7,9 @@ import CodeBlock from "../components/ui/CodeBlock.jsx";
 import ScreenshotPlaceholder from "../components/ui/ScreenshotPlaceholder.jsx";
 import StepCard from "../components/ui/StepCard.jsx";
 import FAQ from "../components/ui/FAQ.jsx";
-import PermissionsTable from "../components/ui/PermissionsTable.jsx";
+// import PermissionsTable from "../components/ui/PermissionsTable.jsx";
 import RelatedModules from "../components/ui/RelatedModules.jsx";
-import PrevNext from "../components/ui/PrevNext.jsx";
+// import PrevNext from "../components/ui/PrevNext.jsx";
 import { getPrevNext } from "../utils/getPrevNext.js";
 
 export default function DocumentationPage({ content }) {
@@ -141,7 +141,7 @@ export default function DocumentationPage({ content }) {
         modules={content.relatedModules}
         basePath={role.basePath}
       />
-      <PrevNext prev={prev} next={next} />
+      {/* <PrevNext prev={prev} next={next} /> */}
     </article>
   );
 }
