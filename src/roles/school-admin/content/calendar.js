@@ -4,74 +4,111 @@ export const calendarContent = {
   category: "Academics",
 
   overview:
-    "The Calendar Module is the central hub for scheduling all school-wide activities, exams, holidays, and meetings. Events added here are immediately visible to all relevant stakeholders (Students, Teachers, and Admins).",
+    "The Calendar section helps you keep track of important school dates in one place. You can add holidays, exams, meetings, school activities, and other events so that students, teachers, and administrators can easily see what is happening and when.",
 
   purpose:
-    "This is the single master schedule for the academic year — rather than each module or teacher maintaining separate dates, the Calendar keeps holidays, exams, meetings, and activities in one shared place that reflects in real time on student and teacher portals.",
+    "The Calendar acts as the school's main schedule. Instead of keeping important dates in different places, you can add them to the Calendar so everyone can see the same information. Changes made to the Calendar are also reflected on the student and teacher portals.",
 
   steps: [
     {
       title: "Open the Calendar",
       description:
-        'From the sidebar, click Calendar under Academics. The page shows a month grid by default, an event count for the month (e.g. "2 events this month"), a "How it Works" guide, a Calendar/Grid view toggle, and an "Add Event" button.',
+        'From the left-side menu, click Calendar. The Calendar opens in a monthly view and shows the events planned for that month. You can see the number of events, switch between Calendar and Grid views, open the "How it Works" guide, and add a new event using the "Add Event" button.',
       screenshot: {
         src: "/screenshots/school-admin/calender/calender_mainpage.png",
-        alt: "Calendar page for August 2026 with Independence Day and Annual Function events shown",
+        alt: "School Calendar showing events for August 2026",
         caption:
-          "Holidays and events are color-coded on the day they fall — red for holidays, green for activities in this example.",
+          "The Calendar shows holidays and other school events on their scheduled dates.",
       },
     },
+
     {
-      title: "Use the built-in How it Works guide",
+      title: "Use the How it Works guide",
       description:
-        'Click "How it Works" to open the "Calendar Module — How it Works" guide, covering Module Overview, Adding Events, Calendar vs Grid View, Event Types & Colors, and Pro Tips.',
+        'Click "How it Works" if you need help using the Calendar. The guide explains how to add events, switch between Calendar and Grid views, and understand the different types of events. It also explains how Calendar updates are shared with students and teachers.',
       screenshot: {
         src: "/screenshots/school-admin/calender/calender_howitworks.png",
-        alt: "Calendar Module How it Works guide showing Module Overview with School Calendar, Event Types, Dual Views, and Real-time Updates cards",
+        alt: "Calendar How it Works guide",
         caption:
-          'The guide notes: "Changes reflect instantly on student/teacher portals" — no separate publish step needed.',
+          "The guide explains the main Calendar features and how to use them.",
       },
     },
+
     {
-      title: "Add an event",
+      title: "Add a new event",
       description:
-        'Click "Add Event" to open the "Add Event" form. Fill in Title*, Date*, Type (dropdown, e.g. Activity), Location, and Description, then click "Create Event."',
+        'Click "Add Event" to create a new school event. Enter the event name and date. You can also select the event type, add a location, and write a description to provide more information. Once the details are complete, click "Create Event" to add it to the Calendar.',
       screenshot: {
         src: "/screenshots/school-admin/calender/calender_Addevent.png",
-        alt: "Add Event form with Title Annual Function, Date 31/08/2026, Type Activity, Location School Campus, Description",
+        alt: "Add Event form for creating a school event",
         caption:
-          "Required fields are Title and Date — Type, Location, and Description are optional context.",
+          "Add the event name and date, and provide additional details such as type, location, and description.",
       },
     },
+
+    {
+      title: "Choose the event type",
+      description:
+        "When adding an event, select the type that best describes it, such as Exam, Holiday, Meeting, or Activity. Choosing the correct type makes it easier to understand and identify different events on the Calendar.",
+      screenshot: {
+        src: "/screenshots/school-admin/calender/calender_Addevent.png",
+        alt: "Add Event form showing event type selection",
+        caption:
+          "Select the appropriate type so the event is easy to identify on the Calendar.",
+      },
+    },
+
     {
       title: "Switch between Calendar and Grid view",
       description:
-        'Use the "Calendar" / "Grid" toggle buttons in the top-right to switch between the monthly calendar layout and a list/grid layout of events. Use the left/right arrows to navigate between months in Calendar view.',
+        'Use the "Calendar" and "Grid" buttons at the top-right of the page to change how you view your events. Calendar view shows events on their dates in a monthly calendar. Grid view shows the events in a list, which can be useful when you want to quickly look through several events. In Calendar view, use the left and right arrows to move between months.',
     },
   ],
 
   bestPractices: [
-    "Set the correct Type for each event (e.g. Exam, Holiday, Meeting, Activity) — the How it Works guide notes event types are used for categorization and color-coding, which helps staff and parents scan the calendar quickly.",
-    "Add events as soon as they're confirmed — since changes reflect instantly on student and teacher portals, this is the fastest way to keep the whole school aligned on dates without separate announcements.",
+    "Add important school dates as soon as they are confirmed so students and teachers can see the latest information.",
+    "Choose the correct event type so holidays, exams, meetings, and activities are easy to identify.",
+    "Add a location and description when an event needs additional information.",
+    "Check the Calendar regularly to make sure important dates are correct and up to date.",
+    "Use Grid view when you want to quickly review a list of upcoming events.",
   ],
 
   commonErrors: [
     {
-      issue: "An event doesn't appear on the calendar day I expected",
-      fix: "Double-check the Date field when creating the event — confirm you're viewing the correct month using the left/right navigation arrows.",
+      issue: "An event is not showing on the expected date.",
+      fix: "Check the date entered when the event was created. Also make sure you are viewing the correct month by using the left and right arrows.",
+    },
+    {
+      issue: "An event is difficult to identify on the Calendar.",
+      fix: "Check that the correct event type was selected when the event was created. Event types help make different kinds of events easier to recognize.",
     },
   ],
 
   faqs: [
     {
-      question: "Who can see events added to the Calendar?",
+      question: "What can I add to the Calendar?",
       answer:
-        "Events are immediately visible to all relevant stakeholders — Students, Teachers, and Admins — through their respective portals.",
+        "You can add important school events such as exams, holidays, meetings, activities, and other events that students and teachers need to know about.",
     },
     {
-      question: "What's the difference between Calendar view and Grid view?",
+      question: "Who can see the events I add?",
       answer:
-        "Calendar view shows a traditional monthly grid with events placed on their dates. Grid view presents events as a list, which can be easier for scanning many events at once.",
+        "Events added to the Calendar are available to the relevant students, teachers, and administrators through their respective portals.",
+    },
+    {
+      question: "What is the difference between Calendar view and Grid view?",
+      answer:
+        "Calendar view shows events on a monthly calendar according to their dates. Grid view displays the events as a list, making it easier to quickly review multiple events.",
+    },
+    {
+      question: "Do I need to publish an event separately?",
+      answer:
+        "No. Once an event is created, the Calendar information is reflected on the relevant student and teacher portals.",
+    },
+    {
+      question: "Can I see events from different months?",
+      answer:
+        "Yes. In Calendar view, use the left and right arrows to move between months and view events scheduled for different dates.",
     },
   ],
 

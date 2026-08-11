@@ -4,113 +4,162 @@ export const teacherContent = {
   category: "People",
 
   overview:
-    "The Teacher Module is your complete staff management hub — it stores every teacher's personal and professional profile, lets you manage their subjects & classes, track attendance, and access payroll, all from one place.",
+    "The Teachers section is where you manage information about all teachers in the school. You can add teachers, update their details, assign subjects and classes, check attendance, manage salary information, and view their documents.",
 
   purpose:
-    "This is the counterpart to the Students module for teaching staff: a single source of truth for who's on staff, what they teach, and their employment details, which other modules (Attendance, Academics) reference.",
+    "Use this section to keep teacher information organized and up to date. You can manage each teacher's personal and work details from one place, while other sections such as Academics, Attendance, and Leaves use this information.",
 
   steps: [
     {
       title: "Open the Teachers page",
       description:
-        'From the sidebar, click Teachers under People. The page lists every teacher in a table with Name, Department, Designation, Status, and Contact columns, plus a search bar, a "How it Works" guide, and an "Add Teacher" button.',
+        'From the left-side menu, click Teachers. You will see a list of teachers with information such as their name, department, designation, status, and contact details. You can search for a teacher, open the "How it Works" guide, or add a new teacher.',
       screenshot: {
         src: "/screenshots/school-admin/schooladmin_teacher.png",
-        alt: "Teachers page with search bar, How it Works, and Add Teacher button",
+        alt: "Teachers page showing teacher list and available actions",
         caption:
-          "Two teachers shown here — Mehek Arora (Mathematics, Senior Teacher) and Kamalpreet Sharma (English, Assistant Teacher).",
+          "The Teachers page gives you a quick view of all teachers and their basic information.",
       },
     },
+
     {
-      title: "Use the built-in How it Works guide",
+      title: "Use the How it Works guide",
       description:
-        'Click "How it Works" to open a walkthrough covering Module Overview, Search & Navigation, Adding Teachers, Teacher Profile, Teacher Status, Edit & Delete, Payroll & Salary, Attendance, and Pro Tips.',
+        'Click "How it Works" to open the teacher guide. It explains how to search for teachers, add and edit teacher information, assign subjects and classes, manage salary, check attendance, and manage teacher records.',
       screenshot: {
         src: "/screenshots/school-admin/schooladmin_teacher_howitworks.png",
-        alt: "Teacher Module How it Works guide showing Module Overview page",
+        alt: "Teacher Module How it Works guide",
         caption:
-          "A quick tip from this guide: the teacher list auto-refreshes after every add, edit, or delete — no manual page reload needed.",
+          "Use the guide if you need help understanding the different features in the Teachers section.",
       },
     },
+
     {
       title: "Add a new teacher",
       description:
-        'Click "Add Teacher" to open the "Add New Teacher" form — a 4-step wizard (Info → Subjects → Salary → Leaves). Step 1 (Info) collects First Name*, Last Name*, Date of Birth, Gender, Qualification, Email, Phone, Department, and Designation, then "Next Step" continues to Subjects.',
+        'Click "Add Teacher" to add a new teacher. The form has four steps: Info, Subjects, Salary, and Leaves. Start by entering the teacher\'s name, date of birth, gender, qualification, email, phone number, department, and designation. Click "Next Step" to continue with subjects, salary, and leave information.',
       screenshot: {
         src: "/screenshots/school-admin/addteacher.png",
-        alt: "Add New Teacher form, step 1 of 4, Info tab",
+        alt: "Add New Teacher form showing teacher information",
         caption:
-          "Steps 2–4 (Subjects, Salary, Leaves) collect teaching assignments, compensation, and leave allowances before the teacher is created.",
+          "Enter the teacher's basic information first, then add subjects, salary, and leave details.",
       },
     },
+
     {
-      title: "View a teacher's full profile",
+      title: "Assign subjects and classes",
       description:
-        'Click the eye icon on a teacher\'s row to open their profile. It has five tabs: Overview (Subjects, Classes, and Salary Status summary cards; Personal Information — full name, DOB, experience, employee ID; and Contact Info — email, phone, address), Schedule & Classes, Payroll & Salary, Leaves & Attendance, and Documents. A "Reset Password" button is available in the top-right.',
+        "During the Subjects step, assign the subjects and classes that the teacher will handle. Make sure these assignments are completed so the teacher appears correctly in related sections such as Academics and Attendance.",
+    },
+
+    {
+      title: "Set salary and leave information",
+      description:
+        "During the Salary and Leaves steps, enter the teacher's salary information and set their available leave days. This information can be managed later from the teacher's profile.",
+    },
+
+    {
+      title: "View a teacher's profile",
+      description:
+        'Click the eye icon next to a teacher to open their complete profile. The profile includes personal information, contact details, subjects, classes, salary information, schedule, attendance and leave information, and documents. You can also use the "Reset Password" option if the teacher needs a new login password.',
       screenshot: {
         src: "/screenshots/school-admin/viewteacherinfo.png",
-        alt: "Teacher profile page Overview tab with Subjects, Classes, and Salary Status cards",
+        alt: "Teacher profile showing teacher information and summary",
         caption:
-          'Subjects and Classes read "None" / "None assigned" until they\'re set — usually during the Subjects step of Add Teacher, or later via Schedule & Classes.',
+          "The teacher profile brings important personal, work, salary, attendance, and document information together.",
       },
     },
+
     {
-      title: "Edit a teacher's information",
+      title: "Edit teacher information",
       description:
-        'Click the pencil icon on a teacher\'s row to open "Edit Teacher," pre-filled with First Name, Last Name, Email, Phone, Department, Designation, and Status. Update and click "Save Changes."',
+        'Click the pencil icon next to a teacher to open "Edit Teacher." The existing information is already filled in, so you can update details such as the teacher\'s name, email, phone number, department, designation, or status. Click "Save Changes" when you are finished.',
       screenshot: {
         src: "/screenshots/school-admin/teacheredit.png",
-        alt: "Edit Teacher modal pre-filled with existing teacher details",
+        alt: "Edit Teacher form showing existing teacher information",
         caption:
-          "This form is intentionally shorter than Add Teacher — subjects, salary, and leaves are edited from the teacher's own profile tabs instead.",
+          "Update teacher information whenever their personal or work details change.",
       },
     },
+
+    {
+      title: "Manage subjects, classes, salary, and leaves",
+      description:
+        "For detailed changes to a teacher's subjects, classes, salary, or leave information, open the teacher's profile and use the relevant section. This keeps the teacher's main information separate from their work assignments and other details.",
+    },
+
+    {
+      title: "Reset a teacher's password",
+      description:
+        'Open the teacher\'s profile and click "Reset Password" when the teacher needs a new login password. Password changes are handled separately from the Edit Teacher form.',
+    },
+
     {
       title: "Delete a teacher",
       description:
-        'Click the trash icon on a teacher\'s row to open "Delete Teacher?" Confirm by clicking "Delete." Unlike deleting a student, this removes the teacher immediately — there is no Super Admin approval step.',
+        'If a teacher no longer needs to be in the system, click the trash icon next to their name. A confirmation message will appear. Click "Delete" only if you are sure. Unlike student deletion, teacher deletion does not require Super Admin approval and cannot be undone.',
       screenshot: {
         src: "/screenshots/school-admin/teacher_delete.png",
-        alt: "Delete Teacher confirmation dialog with warning that the action cannot be undone",
+        alt: "Delete Teacher confirmation message",
         caption:
-          "There is no undo and no approval queue for teacher deletion — double-check before confirming.",
+          "Check the teacher's details carefully before deleting because the action cannot be undone.",
       },
     },
   ],
 
   bestPractices: [
-    'Assign Subjects and Classes during the Add Teacher wizard (or promptly afterward via the profile) — a teacher with "None assigned" won\'t correctly appear in class/subject-linked views like Academics or Attendance.',
-    'Keep Designation and Department consistent in phrasing (e.g. always "Senior Teacher" not sometimes "Sr. Teacher") since these values likely feed staff directory filters and reports.',
-    "Use Reset Password (on a teacher's profile page) for credential resets rather than trying to set a password through Edit Teacher.",
+    "Complete the teacher's subject and class assignments when adding them so their information is available correctly in other school sections.",
+    "Keep teacher information updated whenever their department, designation, contact details, or status changes.",
+    "Use the teacher's profile to manage detailed information such as salary, leaves, subjects, and classes.",
+    "Use the Reset Password option on the teacher's profile when a teacher needs a new login password.",
+    "Check teacher information regularly to make sure assignments and contact details are correct.",
   ],
 
   commonErrors: [
     {
-      issue: "Accidentally deleted a teacher and want it undone",
-      fix: "This isn't recoverable — teacher deletion is immediate and permanent, unlike student deletion which requires Super Admin approval. Double-check the name in the confirmation dialog before clicking Delete.",
+      issue: "A teacher's Subjects or Classes shows as empty.",
+      fix: "Open the teacher's profile and check the Schedule & Classes section. Assign the correct subjects and classes if they were not added when the teacher was created.",
     },
     {
-      issue: 'A teacher\'s profile shows "None" for Subjects or Classes',
-      fix: "This is expected if assignments weren't completed during the Subjects step of Add Teacher — assign them from the teacher's Schedule & Classes tab.",
+      issue: "A teacher was deleted by mistake.",
+      fix: "Teacher deletion cannot be undone. Always check the teacher's name carefully in the confirmation message before clicking Delete.",
+    },
+    {
+      issue: "The teacher's password needs to be changed.",
+      fix: "Open the teacher's profile and use the Reset Password option. Do not try to change the password from the Edit Teacher form.",
     },
   ],
 
   faqs: [
     {
-      question:
-        "Does deleting a teacher require approval, like deleting a student does?",
+      question: "What information can I manage for a teacher?",
       answer:
-        "No — teacher deletion happens immediately upon confirmation. Student deletion is the one that routes through a Super Admin approval request; teacher deletion does not.",
+        "You can manage the teacher's personal information, contact details, department, designation, subjects, classes, salary, leaves, attendance, and documents.",
     },
     {
-      question: "Where do I manage a teacher's salary or payroll?",
+      question: "Can I assign subjects and classes to a teacher?",
       answer:
-        "Set it initially during the Salary step of Add Teacher, and manage it afterward from the Payroll & Salary tab on the teacher's own profile page.",
+        "Yes. You can assign subjects and classes when adding the teacher or manage these assignments later from the teacher's profile.",
+    },
+    {
+      question: "Does deleting a teacher require Super Admin approval?",
+      answer:
+        "No. Teacher deletion happens immediately after confirmation. Unlike student deletion, it does not go through a Super Admin approval process.",
+    },
+    {
+      question: "Where can I manage a teacher's salary?",
+      answer:
+        "Salary information can be entered when adding a teacher and managed later from the Payroll & Salary section of the teacher's profile.",
     },
     {
       question: "Can I see a teacher's attendance history?",
       answer:
-        "Yes — open their profile (eye icon) and go to the Leaves & Attendance tab.",
+        "Yes. Open the teacher's profile and go to the Leaves & Attendance section to view their attendance information.",
+    },
+    {
+      question: "Can I change a teacher's login password?",
+      answer:
+        "Yes. Open the teacher's profile and use the Reset Password option to change their login password.",
     },
   ],
 

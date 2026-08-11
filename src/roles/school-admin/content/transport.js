@@ -4,198 +4,251 @@ export const transportContent = {
   category: "Operations",
 
   overview:
-    "Transport Management is where School Admins manage the entire school transport system — vehicles, drivers and helpers, routes with stops, and which students are assigned to which route.",
+    "The Transport section helps you manage the school's buses and other transport services. You can add vehicles, manage drivers and helpers, create routes and stops, and assign students to the correct route.",
 
   purpose:
-    "Transport ties together four connected pieces (vehicle → driver → route → student) into one module, so assigning a student to a bus is a matter of picking an existing route and stop rather than re-entering vehicle or driver details each time.",
+    "Use this section to manage all school transport information in one place. First, add your vehicles and drivers, then create routes and stops. Once the routes are ready, you can assign students to their pickup and drop-off points.",
 
   steps: [
     {
       title: "Open Transport Management",
       description:
-        'From the sidebar, click Transport under Operations. The page has five tabs: Dashboard, Vehicles, Drivers, Routes, and Students, plus a "How it Works" guide and a refresh button.',
+        'From the left-side menu, click Transport. You will see five sections: Dashboard, Vehicles, Drivers, Routes, and Students. You can also open the "How it Works" guide or refresh the transport information.',
       screenshot: {
         src: "/screenshots/school-admin/transport/transport_dashboard.png",
-        alt: "Transport Management Dashboard tab with Total Vehicles, Drivers & Helpers, Active Routes, and Students stat cards",
+        alt: "Transport Dashboard showing vehicles, drivers, routes, and students",
         caption:
-          "The Dashboard also shows a Fleet Overview listing each vehicle with its assigned driver, helper, and route.",
+          "The Transport Dashboard gives you a quick overview of the school's transport system.",
       },
     },
+
     {
-      title: "Manage vehicles",
+      title: "Check the Transport Dashboard",
       description:
-        "Open the Vehicles tab to view all registered vehicles. Each card displays the vehicle number, type, seating capacity, fuel type, assigned driver, assigned route, and current status.",
+        "The Dashboard shows a summary of your transport system, including the total number of vehicles, drivers and helpers, active routes, and students using transport. You can also see which driver, helper, and route are currently connected to each vehicle.",
+      screenshot: {
+        src: "/screenshots/school-admin/transport/transport_dashboard.png",
+        alt: "Transport Dashboard showing transport summary and vehicle information",
+        caption:
+          "Use the Dashboard to quickly check the current status of the school's transport system.",
+      },
+    },
+
+    {
+      title: "View registered vehicles",
+      description:
+        "Open the Vehicles section to see all vehicles registered with the school. Each vehicle shows its vehicle number, type, seating capacity, fuel type, assigned driver, assigned route, and current status.",
       screenshot: {
         src: "/screenshots/school-admin/transport/transport_vehical_mainpage.png",
-        alt: "Vehicles page listing all registered buses",
-        caption: "Each vehicle displays its current driver and assigned route.",
+        alt: "Vehicles section showing registered school buses",
+        caption:
+          "The Vehicles section shows important information about each school vehicle.",
       },
     },
+
     {
       title: "Add a vehicle",
       description:
-        'Switch to the Vehicles tab and click "Add Vehicle." Each vehicle card shows its number, type (e.g. bus), seat capacity, fuel type (e.g. cng, diesel), status, and any assigned driver/route — the trash icon removes a vehicle.',
+        'Open the Vehicles section and click "Add Vehicle" to register a new school vehicle. Enter the vehicle number, vehicle type, seating capacity, fuel type, and other required information. You can also connect a driver or route when available.',
       screenshot: {
         src: "/screenshots/school-admin/transport/transport_add_vehicle.png",
-        alt: "Vehicles tab showing two active buses, 2222 and 1111, with driver and route tags",
+        alt: "Vehicles section showing school buses and their assignments",
         caption:
-          "Vehicle 2222 is already linked to driver Ramesh and Route 2 Gurgaon; 1111 has a driver but no route yet.",
+          "Add each school vehicle so it can later be connected to a driver and route.",
       },
     },
 
     {
       title: "Add a driver or helper",
       description:
-        'Switch to the Drivers tab and click "Add Driver / Helper." Fill in Name*, Phone*, Role (Driver or Helper), and optionally Assign to Vehicle right away. Click "Add" to save.',
+        'Open the Drivers section and click "Add Driver / Helper". Enter the person\'s name, phone number, and select whether they are a Driver or Helper. You can also assign a vehicle at this stage, or connect them to a vehicle later. Click "Add" to save the information.',
       screenshot: {
         src: "/screenshots/school-admin/transport/transport_Add_driver.png",
-        alt: "Add Driver / Helper form with Name, Phone, Role, and Assign to Vehicle fields",
+        alt: "Add Driver or Helper form",
         caption:
-          "Assigning a vehicle here is optional — a driver can be added first and linked to a vehicle later.",
+          "Add drivers and helpers and optionally connect them to a vehicle.",
       },
     },
+
     {
       title: "View drivers and helpers",
       description:
-        "The Drivers tab lists everyone added, each showing their name, phone number, role badge (Driver/Helper), and any vehicle they're currently linked to.",
+        "The Drivers section shows all drivers and helpers added to the system. You can see their name, phone number, role, and the vehicle they are currently assigned to.",
       screenshot: {
         src: "/screenshots/school-admin/transport/transport_driver_mainpage.png",
-        alt: "Drivers & Helpers tab showing Kamal linked to vehicle 1111 and Ramesh linked to vehicle 2222",
+        alt: "Drivers and Helpers section showing transport staff",
         caption:
-          "Each driver card shows a chip for their assigned vehicle number, if one exists.",
+          "Check which drivers and helpers are currently connected to each vehicle.",
       },
     },
+
     {
-      title: "Manage routes",
+      title: "View transport routes",
       description:
-        "Open the Routes tab to view all transport routes. Each route displays its stops, assigned students, and available actions.",
+        "Open the Routes section to see all school transport routes. Each route shows its stops and the students assigned to it. You can expand a route to see more details and available actions.",
       screenshot: {
         src: "/screenshots/school-admin/transport/transport_routes_mainpage.png",
-        alt: "Routes page listing transport routes",
+        alt: "Routes section showing school transport routes",
         caption:
-          "Expand a route to view its stops and available management actions.",
+          "View routes and expand them to check their stops and assignments.",
       },
     },
+
     {
-      title: "Create a route",
+      title: "Create a transport route",
       description:
-        'Switch to the Routes tab and click "Add Route." Enter a Route Name*, then add one or more Stops — each stop has a name, a pickup time, and a fee amount (₹). Use "+ Add Stop" for multi-stop routes, then click "Create Route."',
+        'Open the Routes section and click "Add Route". Enter a name for the route and add one or more stops. For each stop, enter the stop name, pickup time, and fee. Click "+ Add Stop" if the route has multiple stops. When all stops are added, click "Create Route".',
       screenshot: {
         src: "/screenshots/school-admin/transport/transport_add_route.png",
-        alt: "Create Route form with Route Name and one stop: Chhaterpur bus station at 08:20, ₹1500",
+        alt: "Add Route form showing route name and stop details",
         caption:
-          "Each stop's fee (₹) is what gets charged when a student is assigned to it.",
+          "Add each pickup stop along with its pickup time and transport fee.",
       },
     },
+
     {
       title: "Assign a vehicle to a route",
       description:
-        'On the Routes tab, expand a route and click "Assign Vehicle." Choose a Vehicle* from the dropdown and optionally a Driver, then click "Assign Vehicle" to confirm.',
+        'Open a route and click "Assign Vehicle". Select the vehicle that will operate the route and, if needed, select its driver. Click "Assign Vehicle" to save the assignment. A route needs a vehicle before students can be assigned to it.',
       screenshot: {
         src: "/screenshots/school-admin/transport/transport_mainpage_assignvehicles.png",
-        alt: "Assign Vehicle to Route modal for Route 2 Gurgaon with vehicle and driver dropdowns",
+        alt: "Assign Vehicle form for a transport route",
         caption:
-          "A route only becomes usable for student assignment once a vehicle is linked to it.",
+          "Connect a vehicle and driver to a route before assigning students to it.",
       },
     },
+
     {
       title: "Edit a route",
       description:
-        'Click "Edit Route" to modify the route name, stops, pickup times, or stop fees, then click "Save Changes".',
+        'Click "Edit Route" to change the route name, stops, pickup times, or stop fees. After making the required changes, click "Save Changes".',
       screenshot: {
         src: "/screenshots/school-admin/transport/transport_mainpage_editroute.png",
-        alt: "Edit Route dialog",
-        caption: "You can add, remove, or update stops from this screen.",
+        alt: "Edit Route form",
+        caption:
+          "Update route details whenever stops, timings, or fees change.",
       },
     },
+
     {
       title: "Delete a route",
       description:
-        'Click "Delete Route" and confirm the deletion. This permanently removes the selected route.',
+        'If a route is no longer needed, click "Delete Route". A confirmation message will appear. Click "Delete" only if you are sure because deleting a route is permanent.',
       screenshot: {
         src: "/screenshots/school-admin/transport/transport_mainpage_deleteroute.png",
-        alt: "Delete Route confirmation dialog",
-        caption: "Deleting a route cannot be undone.",
+        alt: "Delete Route confirmation message",
+        caption:
+          "Check the route carefully before deleting it because the action cannot be undone.",
       },
     },
+
     {
-      title: "Manage student transport",
+      title: "View student transport assignments",
       description:
-        "Open the Students tab to view all transport assignments. Search by student name or admission number, filter by route, and review each student's assigned stop and trip type.",
+        "Open the Students section under Transport to see which students are using school transport. You can search by student name or admission number, filter students by route, and check each student's assigned stop and trip type.",
       screenshot: {
         src: "/screenshots/school-admin/transport/transport_student_mainpage.png",
-        alt: "Student transport assignments page",
+        alt: "Student transport assignments section",
         caption:
-          "The Students tab provides a complete overview of transport assignments.",
+          "The Students section shows which route and stop each student is using.",
       },
     },
+
     {
       title: "Assign a student to transport",
       description:
-        'Switch to the Students tab and click "Assign Student." Select a Class*, then a Student*, a Route*, a Stop* (shown with its time and fee), and a Trip Type (e.g. Both — Pickup & Drop). Click "Assign Student" to confirm.',
+        'Open the Students section and click "Assign Student". Select the student\'s class and name, then choose a route and stop. The stop will show its pickup time and fee. Finally, choose the trip type, such as Both for pickup and drop, and click "Assign Student".',
       screenshot: {
         src: "/screenshots/school-admin/transport/transport_assign_student.png",
-        alt: "Assign Student to Transport modal for Aman Sharma, Route 2 Gurgaon, Dlf phase 2 stop",
+        alt: "Assign Student to Transport form",
         caption:
-          'The Select Stop dropdown shows each stop\'s time and fare (e.g. "07:30 - ₹2000") to confirm before assigning.',
+          "Select the student's route, stop, pickup time, fee, and trip type before confirming the assignment.",
       },
     },
+
     {
-      title: "Unassign a student from transport",
+      title: "Remove a student's transport assignment",
       description:
-        'On the Students tab, click the trash icon on a student\'s row. Confirm in the "Unassign Student" dialog — this action cannot be undone.',
+        'If a student no longer uses school transport, click the trash icon next to the student in the Students section. A confirmation message will appear. Click "Unassign Student" to remove the transport assignment. This does not delete the student from the school.',
       screenshot: {
         src: "/screenshots/school-admin/transport/transport_studentassign_delete.png",
-        alt: "Unassign Student confirmation dialog warning the action cannot be undone",
+        alt: "Unassign Student confirmation message",
         caption:
-          "Unassigning only removes the transport link — it does not delete the student record itself.",
+          "Removing a transport assignment only disconnects the student from transport; the student record remains unchanged.",
       },
     },
+
     {
       title: "Use the How it Works guide",
       description:
-        'Click the "How it Works" button in the top-right corner to open the built-in walkthrough explaining the Transport module.',
+        'Click "How it Works" at the top of the Transport section to open the built-in guide. It explains the main transport features and the steps for setting up vehicles, drivers, routes, and student assignments.',
       screenshot: {
         src: "/screenshots/school-admin/transport/transport_howitworks.png",
         alt: "Transport How it Works guide",
         caption:
-          "The guide explains the complete transport workflow for administrators.",
+          "Use the guide if you need help setting up or managing school transport.",
       },
     },
   ],
 
   bestPractices: [
-    "Set up Vehicles and Drivers before creating Routes, and Routes before assigning Students — the Assign Student form requires an existing route and stop to choose from.",
-    "Keep stop fees accurate when editing a route — changing a stop's fee doesn't retroactively adjust students already assigned to it, so verify pricing before large batches of student assignments.",
-    "Assign both a driver and a vehicle to every active route — an unassigned vehicle (like vehicle 1111 with no route) sits idle and won't appear as a usable transport option for students.",
+    "Add vehicles and drivers first, then create routes and stops, and finally assign students to those routes.",
+    "Check vehicle, driver, and route information regularly to make sure transport assignments are correct.",
+    "Keep pickup times and stop fees updated whenever there are changes.",
+    "Check the student transport list regularly to make sure every student is assigned to the correct route and stop.",
+    "Before deleting a route or removing a transport assignment, check the details carefully because these actions cannot be undone.",
   ],
 
   commonErrors: [
     {
-      issue: "Can't find a route when assigning a student",
-      fix: "Make sure the route has at least one stop and a vehicle assigned — routes without stops won't have a usable Select Stop option in the Assign Student form.",
+      issue: "A route is not available when assigning a student.",
+      fix: "Check that the route has at least one stop and that a vehicle has been assigned to the route. The student assignment requires an available route and stop.",
     },
     {
-      issue: "Accidentally deleted a route with active student assignments",
-      fix: "This can't be undone — deleting a route is permanent, so check its student count (shown on the Routes tab) before deleting.",
+      issue: "A student was assigned to the wrong stop.",
+      fix: "Review the student's transport assignment and make sure the correct route and stop are selected. Check the pickup time and fee before saving the assignment.",
+    },
+    {
+      issue: "A vehicle is not available for student transport.",
+      fix: "Check the vehicle's information and make sure it has been assigned to a route. A route must have a vehicle before students can use it.",
+    },
+    {
+      issue: "A route was deleted by mistake.",
+      fix: "Deleted routes cannot be restored. Always check the route and its student assignments before confirming deletion.",
     },
   ],
 
   faqs: [
     {
-      question: "What's the difference between a Driver and a Helper?",
+      question: "What can I manage in the Transport section?",
       answer:
-        'Both are added through the same "Add Driver / Helper" form — the Role field distinguishes them (Driver vs Helper) for record-keeping and display purposes.',
+        "You can manage school vehicles, drivers, helpers, transport routes, stops, transport fees, and student transport assignments.",
     },
     {
-      question: "How is a student's transport fee determined?",
+      question: "What information is needed to create a route?",
       answer:
-        "It comes from the fee (₹) set on the specific stop they're assigned to when creating or editing a route — different stops on the same route can have different fees.",
+        "You need to enter a route name and add at least one stop. Each stop can have a name, pickup time, and transport fee.",
     },
     {
-      question: "Can one vehicle be assigned to more than one route?",
+      question: "How is a student's transport fee decided?",
       answer:
-        "Check the Vehicles tab — each vehicle card shows its currently assigned route as a single chip, suggesting one active route per vehicle at a time in this version.",
+        "The transport fee comes from the fee set for the specific stop selected when assigning the student. Different stops can have different fees.",
+    },
+    {
+      question: "Can a driver be added without assigning a vehicle?",
+      answer:
+        "Yes. You can add a driver or helper first and assign a vehicle later.",
+    },
+    {
+      question: "What is the difference between a Driver and a Helper?",
+      answer:
+        "A Driver is responsible for driving the school vehicle, while a Helper is another staff member assigned to assist with the transport service. You can select the person's role when adding them.",
+    },
+    {
+      question:
+        "Can I remove a student from transport without deleting the student?",
+      answer:
+        "Yes. Unassigning a student only removes their transport assignment. The student's main school record remains unchanged.",
     },
   ],
 

@@ -4,125 +4,150 @@ export const studentsContent = {
   category: "People",
 
   overview:
-    "The Students module is the central hub for managing every student in your school — a complete digital record from admission to graduation, including personal details, class assignment, fee status, and contact information.",
+    "The Students section is where you manage all student information in the school. You can add new students, view their profiles, update their details, check attendance and fees, view documents, and request student record deletion when needed.",
 
   purpose:
-    "This is where School Admins maintain the student database that every other module (Attendance, Fees, Academics) draws from. Keeping records here accurate and current is what keeps the rest of the platform reliable.",
+    "Use this section to keep student information complete and up to date. Other sections such as Attendance, Fees, and Academics use the information stored here, so keeping student records accurate helps the school manage daily activities properly.",
 
   steps: [
     {
       title: "Open the Students page",
       description:
-        'From the sidebar, click Students under People. The page lists every enrolled student in a table with Name, Class, Status, Fees & Status, Services, and Contact columns, plus a search bar, a "How it Works" guide button, a "Deletion Requests" panel, and an "Add Student" button.',
+        'From the left-side menu, click Students. You will see a list of all students with information such as their name, class, status, fee status, services, and contact details. You can search for a student, open the "How it Works" guide, check Deletion Requests, or add a new student.',
       screenshot: {
         src: "/screenshots/school-admin/schooladmin_student.png",
-        alt: "Students page with search bar, How it Works, Deletion Requests, and Add Student buttons",
+        alt: "Students page showing student list and available actions",
         caption:
-          "Two students shown here — Aniket Mehra (Class 1-A) and Aman Sharma (Class 2-A), both active and fees paid.",
+          "The Students page gives you a quick view of all students and their basic information.",
       },
     },
+
     {
-      title: "Use the built-in How it Works guide",
+      title: "Use the How it Works guide",
       description:
-        'Click "How it Works" to open an in-app walkthrough covering Module Overview, Search & Filter, Adding Students, Student Profile, Fee Status, Edit & Delete, Deletion Requests, CCTV & Transport, and Pro Tips — step through it with Next/Previous.',
+        'Click "How it Works" to open the student guide. It explains how to search for students, add and edit student information, view student profiles, check fees and attendance, manage documents, and handle deletion requests.',
       screenshot: {
         src: "/screenshots/school-admin/schooladmin_howitworks.png",
-        alt: "Student Module How it Works guide showing Module Overview page",
+        alt: "Student Module How it Works guide",
         caption:
-          "A quick tip from this guide: the student list auto-refreshes after every add, edit, or delete — no manual refresh needed.",
+          "Use the guide if you need help understanding the different features in the Students section.",
       },
     },
+
     {
       title: "Add a new student",
       description:
-        'Click "Add Student" to open the "Add New Student" form — a 3-step wizard (Personal → Academic → Guardian). Step 1 (Personal) collects First Name*, Last Name*, Date of Birth, Gender, Category, Phone, Email*, and Address, then click "Next" to continue.',
+        'Click "Add Student" to add a new student to the school. The form has three steps: Personal, Academic, and Guardian. Start by entering the student\'s name, date of birth, gender, category, phone number, email, and address. Click "Next" to continue to the academic and guardian information.',
       screenshot: {
         src: "/screenshots/school-admin/schooladmin_addstudent.png",
-        alt: "Add New Student form, step 1 of 3, Personal information",
+        alt: "Add New Student form showing personal information",
         caption:
-          "Required fields (marked *) must be filled before Next becomes usable — shown here is a validation prompt on Last Name.",
+          "Enter the student's basic information first, then continue with academic and guardian details.",
       },
     },
+
     {
-      title: "View a student's full profile",
+      title: "Complete student information",
       description:
-        'Click the eye icon on a student\'s row to open their profile page. It has four tabs: Overview (Personal Information — full name, DOB, gender, category, guardian, nationality, joined date; and Contact Details — email, phone, guardian phone, address), Leaves & Attendance, Fees & Expenses, and Documents. A "Reset Password" button is available in the top-right.',
+        "Continue through the Academic and Guardian steps when adding a student. Enter the student's class and other academic information, followed by parent or guardian details. Make sure all required fields are completed before moving to the next step.",
+    },
+
+    {
+      title: "View a student's profile",
+      description:
+        'Click the eye icon next to a student to open their complete profile. The profile contains personal information, contact details, attendance and leave information, fee and expense information, and documents. You can also use the "Reset Password" option if the student\'s login password needs to be changed.',
       screenshot: {
         src: "/screenshots/school-admin/schooladmin_studentinfo.png",
-        alt: "Student profile page Overview tab with Personal Information and Contact Details cards",
+        alt: "Student profile showing personal and contact information",
         caption:
-          "The profile URL includes the student's unique ID — useful for direct linking or support requests.",
+          "The student profile brings important student information together in one place.",
       },
     },
+
     {
-      title: "Edit a student's information",
+      title: "Edit student information",
       description:
-        "Click the pencil icon on a student's row to open \"Edit Student\" — the same 3-step Personal → Academic → Guardian wizard used for adding, pre-filled with the student's current details. Update any field and step through to save.",
+        "Click the pencil icon next to a student to update their information. The same three steps used when adding a student are available here: Personal, Academic, and Guardian. The existing information is already filled in, so you only need to change the details that need updating and save the changes.",
       screenshot: {
         src: "/screenshots/school-admin/schooladmin_editstudent.png",
-        alt: "Edit Student form pre-filled with existing student details",
+        alt: "Edit Student form showing existing student information",
         caption:
-          'The same form structure as Add Student, just pre-populated and titled "Edit Student."',
+          "Update student information whenever personal, academic, or guardian details change.",
       },
     },
+
     {
-      title: "Request a student deletion",
+      title: "Request student record deletion",
       description:
-        'Click the trash icon on a student\'s row to open "Delete Student." Unlike deleting a school (Super Admin), deleting a student does not happen immediately — clicking "Request Deletion" sends the request to the Super Admin for approval before any data is removed.',
+        'If a student record needs to be removed, click the trash icon next to the student. You will see a Delete Student window. Student records are not deleted immediately. Clicking "Request Deletion" sends the request to the Super Admin for approval.',
       screenshot: {
         src: "/screenshots/school-admin/schooladmin_deletion.png",
-        alt: "Delete Student modal explaining the request requires super admin approval",
+        alt: "Delete Student window showing Super Admin approval requirement",
         caption:
-          "No data is removed at this step — this only creates a pending request.",
+          "A deletion request must be approved by the Super Admin before the student record is removed.",
       },
     },
+
     {
-      title: "Track a deletion request's status",
+      title: "Check deletion requests",
       description:
-        'Click "Deletion Requests" on the Students page to see all pending, approved, and rejected requests. Each entry shows the student name, who requested it, current status (e.g. "Pending Super Admin Approval"), the date requested, and a Request ID for reference.',
-      // screenshot: {
-      //   src: "/screenshots/school/deletion-request-status.png",
-      //   alt: "Deletion Request Status modal showing Pending Super Admin Approval",
-      //   caption:
-      //     "Status updates once the Super Admin reviews the request in their Approvals module.",
-      // },
+        'Click "Deletion Requests" on the Students page to see the requests you have submitted. You can check the student\'s name, who submitted the request, its current status, the date it was submitted, and the Request ID. The status will change after the Super Admin reviews the request.',
     },
   ],
 
   bestPractices: [
-    "Fill in Guardian details during the Academic/Guardian steps when adding a student — they're required for emergency contact and appear on the student's profile Contact Details.",
-    "Use Reset Password (on a student's profile page) rather than trying to edit login credentials through the Edit Student form — they're handled separately.",
-    "Check Deletion Requests periodically if you've submitted one — approval timing depends on the Super Admin's review, not on any action on your end.",
+    "Enter complete student and guardian information when adding a new student so the school always has the correct contact details.",
+    "Keep student information updated whenever there is a change in contact details, class, or other important information.",
+    "Use the student profile to check attendance, fees, and documents instead of searching through different sections.",
+    "Use the Reset Password option on the student's profile when a student needs a new login password.",
+    "Check Deletion Requests regularly if you have submitted a request, as the Super Admin needs to approve it before the record is removed.",
   ],
 
   commonErrors: [
     {
-      issue:
-        "Clicked the trash icon expecting the student to be deleted immediately",
-      fix: 'This is expected behavior, not a bug — student deletion always requires Super Admin approval. Track progress via "Deletion Requests."',
+      issue: "The student was not deleted after clicking the trash icon.",
+      fix: 'This is normal. Student records require Super Admin approval before they are deleted. Open "Deletion Requests" to check the status of your request.',
     },
     {
-      issue:
-        '"Next" button in Add/Edit Student doesn\'t proceed to the next step',
-      fix: 'Check for a validation tooltip like "Please fill in this field" on a required field (marked *) — all required fields on the current step must be completed first.',
+      issue: 'The "Next" button does not move to the next step.',
+      fix: "Check the current form for any required fields marked with an asterisk (*). Complete all required fields before continuing.",
+    },
+    {
+      issue: "A student's information is incorrect or outdated.",
+      fix: "Click the pencil icon next to the student, update the required information, and save the changes.",
     },
   ],
 
   faqs: [
     {
-      question: "Can I delete a student's record immediately without approval?",
+      question: "What information can I manage for a student?",
       answer:
-        "No — every deletion request is routed to the Super Admin for review before any data is actually removed. This protects against accidental or unauthorized data loss.",
+        "You can manage the student's personal information, academic information, guardian details, contact information, attendance, fees, and documents.",
     },
     {
-      question: "What does the Services column on the student list show?",
+      question: "Can I delete a student's record immediately?",
       answer:
-        'It reflects additional services tied to that student, such as CCTV or transport enrollment — covered in the "CCTV & Transport" section of the built-in How it Works guide.',
+        "No. Student deletion requires approval from the Super Admin. You can submit a deletion request and check its status from the Deletion Requests section.",
     },
     {
-      question: "Where do I see a student's fee payment history in detail?",
+      question: "Where can I check a student's attendance?",
       answer:
-        "Open the student's profile (eye icon) and go to the Fees & Expenses tab — the list view's Fees & Status column only shows a summary badge like \"paid.\"",
+        "Open the student's profile and go to the Leaves & Attendance section to view their attendance information.",
+    },
+    {
+      question: "Where can I check a student's fee information?",
+      answer:
+        "Open the student's profile and go to Fees & Expenses to view their fee and payment information.",
+    },
+    {
+      question: "What does the Services information show?",
+      answer:
+        "The Services information shows additional services associated with the student, such as CCTV or transport services.",
+    },
+    {
+      question: "Can I change a student's login password?",
+      answer:
+        "Yes. Open the student's profile and use the Reset Password option to change their login password.",
     },
   ],
 

@@ -4,118 +4,102 @@ export const dashboardContent = {
   category: "Main",
 
   overview:
-    "The Dashboard is the central workspace of the School Admin Portal. It provides a real-time snapshot of your school's daily operations, allowing you to monitor key metrics, access frequently used features, review recent activities, and quickly navigate to every major module from one place.",
+    "The Dashboard is the main page of the School Admin Portal. It gives you a quick view of what is happening in your school, such as the number of students, today's attendance, unpaid fees, assignments, recent admissions, and pending approvals. You can also use it to quickly open commonly used school activities.",
 
   purpose:
-    "Instead of opening multiple modules individually, the Dashboard brings together the most important information—student count, attendance, fee status, assignments, admissions, approvals, and quick shortcuts—so administrators can immediately understand what's happening across the school and take action when required.",
+    "The Dashboard saves you time by bringing important school information into one place. Instead of opening different sections one by one, you can check the school's current status and quickly perform common tasks such as adding a student, marking attendance, collecting fees, or adding a teacher.",
 
   steps: [
     {
-      title: "View the Dashboard overview",
+      title: "Check the Dashboard",
       description:
-        "After logging in, the Dashboard opens automatically. At the top you'll find the current date, a personalized welcome message, the school name, a global search bar, and an 'Add Student' shortcut. Just below these are four summary cards showing Total Students, Today's Attendance, Fee Defaulters, and Assignments. These cards give you an instant overview of your school's current status without opening individual modules.",
+        "After you log in, the Dashboard opens automatically. At the top, you can see today's date, a welcome message, the school name, a search box, and an 'Add Student' button. Below this, four boxes show important information: Total Students, Today's Attendance, Fee Defaulters, and Assignments. These numbers help you quickly understand what is happening in the school.",
       screenshot: {
         src: "/screenshots/school-admin/dashboard/schooladmin_dashboard.png",
-        alt: "School Admin Dashboard overview showing statistics cards and top navigation",
+        alt: "School Admin Dashboard showing school information and summary cards",
         caption:
-          "The dashboard provides a quick summary of your school's daily activity immediately after login.",
+          "The Dashboard gives you a quick view of the school's important information.",
       },
     },
 
     {
       title: "Use Quick Actions",
       description:
-        "The Quick Actions section contains shortcuts for the most frequently performed administrative tasks. Instead of navigating through the sidebar, you can directly Add Student, Mark Attendance, Collect Fee, Add Teacher, Create a New Exam, or open the Timetable module with a single click. These shortcuts help reduce navigation time during daily operations.",
-      // screenshot: {
-      //   src: "/screenshots/school-admin/dashboard_quick_actions.png",
-      //   alt: "Quick Actions section containing shortcuts for common school operations",
-      //   caption:
-      //     "Use Quick Actions for the tasks you perform most often throughout the school day.",
-      // },
+        "Quick Actions gives you buttons for tasks that you use often. You can use these buttons to Add Student, Mark Attendance, Collect Fee, Add Teacher, Create an Exam, or open the Timetable. This saves you from searching through the menu every time you want to perform a common task.",
     },
 
     {
-      title: "Monitor recent admissions",
+      title: "Check recent admissions",
       description:
-        "The Recent Admissions table displays the latest students added to the system. Each row shows the student's name, class, admission status, fee payment status, and when they joined. Selecting 'View All' opens the complete Students module where every student record can be managed.",
-      // screenshot: {
-      //   src: "/screenshots/school-admin/dashboard_recent_admissions.png",
-      //   alt: "Recent Admissions table showing newly admitted students",
-      //   caption:
-      //     "Quickly verify new admissions without opening the Students module.",
-      // },
+        "The Recent Admissions section shows the students who were added to the school recently. You can see the student's name, class, admission status, fee payment status, and joining date. If you want to see all students, click 'View All' to open the Students section.",
     },
 
     {
-      title: "Review assignments and approvals",
+      title: "Check assignments and approvals",
       description:
-        "The right-hand panel summarizes assignment activity and pending approval requests. Assignment statistics show how many assignments are Published, Draft, Overdue, and Pending Review. Below that, the Pending Approvals widget alerts you whenever actions require administrative approval. When everything has been processed, it displays an 'All caught up' message.",
-      // screenshot: {
-      //   src: "/screenshots/school-admin/dashboard_assignments.png",
-      //   alt: "Assignments summary and Pending Approvals widgets",
-      //   caption:
-      //     "Keep track of academic tasks and administrative approvals from one location.",
-      // },
+        "This section helps you keep track of assignments and requests that need your attention. You can see how many assignments are Published, Draft, Overdue, or waiting for Review. The Pending Approvals section shows requests that need your approval. If there is nothing waiting for you, it will show 'All caught up'.",
     },
 
     {
-      title: "Navigate using Dashboard shortcuts",
+      title: "Open other school sections",
       description:
-        "At the bottom of the Dashboard are navigation cards for major school modules such as Attendance, Fees, Exams, and Transport. These cards act as quick navigation buttons. Clicking any card immediately opens its respective module, allowing you to switch between operational areas without using the sidebar menu.",
-      // screenshot: {
-      //   src: "/screenshots/school-admin/dashboard_navigation_cards.png",
-      //   alt: "Bottom navigation cards linking to Attendance, Fees, Exams, and Transport",
-      //   caption:
-      //     "Each dashboard card redirects directly to its corresponding module.",
-      // },
+        "At the bottom of the Dashboard, you will find shortcuts to important sections such as Attendance, Fees, Exams, and Transport. Click on any shortcut to open that section directly. You can also use the menu on the left side to access all available sections.",
     },
   ],
 
   bestPractices: [
-    "Review the Dashboard at the beginning of every day to identify attendance issues, fee defaulters, pending assignments, and approval requests.",
-    "Use Quick Actions for routine administrative work instead of navigating through multiple sidebar menus.",
-    "Regularly monitor the Recent Admissions section to verify that newly admitted students appear correctly in the system.",
-    "Resolve Pending Approvals promptly to prevent delays in administrative workflows.",
-    "Use the bottom navigation cards to quickly move between frequently used modules during daily operations.",
+    "Check the Dashboard at the start of the day to see if there are any important updates or tasks that need your attention.",
+    "Use Quick Actions when you want to perform common tasks quickly.",
+    "Check Recent Admissions regularly to make sure newly added students are showing correctly.",
+    "Check Pending Approvals regularly so that requests do not remain pending for too long.",
+    "Use the Dashboard shortcuts to quickly open sections you use frequently.",
   ],
 
   commonErrors: [
     {
-      issue: "Dashboard statistics don't match recent changes.",
-      fix: "Refresh the page or ensure the latest student, attendance, fee, or assignment records have been saved successfully before expecting the dashboard metrics to update.",
+      issue: "The numbers on the Dashboard are not updated.",
+      fix: "Refresh the page and check again. Also make sure the latest student, attendance, fee, or assignment information was saved successfully.",
     },
     {
-      issue: "A Quick Action doesn't perform the expected task.",
-      fix: "Verify that you have permission to access that module. Some actions may only be available to users with the required administrative role.",
+      issue: "A Quick Action is not working.",
+      fix: "Make sure you have permission to use that feature. Some actions may only be available to administrators or specific staff members.",
     },
     {
-      issue:
-        "Pending Approvals shows 'All caught up' but an approval is expected.",
-      fix: "Confirm that the request was actually submitted. Only requests awaiting administrative action appear in this widget.",
+      issue: "An expected request is not showing under Pending Approvals.",
+      fix: "Check whether the request was submitted successfully. Only requests that have been submitted and are waiting for approval appear in this section.",
     },
   ],
 
   faqs: [
     {
-      question: "Does the Dashboard update automatically?",
+      question: "What is the Dashboard used for?",
       answer:
-        "Most dashboard widgets reflect the latest data stored in the system. If recent changes aren't visible immediately, refreshing the page will load the latest information.",
+        "The Dashboard gives you a quick view of important school information. You can check students, attendance, fees, assignments, admissions, and approvals from one place.",
     },
     {
-      question:
-        "Can I perform administrative tasks directly from the Dashboard?",
+      question: "Do I need to open every section to check school information?",
       answer:
-        "Yes. The Quick Actions section allows you to perform common operations such as adding students, marking attendance, collecting fees, adding teachers, creating exams, and opening the timetable.",
+        "No. The Dashboard shows the most important information in one place. You can open a specific section when you need more details.",
     },
     {
-      question: "What happens when I click the bottom dashboard cards?",
+      question: "Can I perform tasks directly from the Dashboard?",
       answer:
-        "Each card opens its corresponding module. For example, the Attendance card opens the Attendance page, the Fees card opens Fee Management, the Exams card opens the Exams module, and the Transport card opens the Transport section.",
+        "Yes. Quick Actions lets you perform common tasks such as adding students, marking attendance, collecting fees, adding teachers, and creating exams.",
     },
     {
-      question: "Can I access every module from the Dashboard?",
+      question: "What happens when I click a Dashboard shortcut?",
       answer:
-        "The Dashboard provides shortcuts to the most frequently used modules. The complete list of modules is always available through the left sidebar navigation.",
+        "The shortcut opens the related section. For example, clicking Attendance opens the Attendance section, clicking Fees opens Fee Management, and clicking Exams opens the Exams section.",
+    },
+    {
+      question: "Can I access all school sections from the Dashboard?",
+      answer:
+        "The Dashboard provides shortcuts to commonly used sections. You can find all available sections in the menu on the left side.",
+    },
+    {
+      question: "What should I check on the Dashboard every day?",
+      answer:
+        "You should check attendance, fee defaulters, recent admissions, assignments, and pending approvals. This helps you quickly identify anything that needs your attention.",
     },
   ],
 

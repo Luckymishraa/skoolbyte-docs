@@ -4,124 +4,156 @@ export const enquiriesContent = {
   category: "People",
 
   overview:
-    "The Enquiry Module is your CRM for managing prospective students. It tracks every lead from initial contact to final conversion or rejection, helping you grow your school's admissions.",
+    "The Enquiries section helps you keep track of families who are interested in enrolling their child in your school. You can add enquiries, record where they came from, follow up with parents, and track whether an enquiry becomes an admission.",
 
   purpose:
-    "Enquiries capture interest before a family commits to applying — this keeps prospective-student leads (and where they came from) organized and followed up on, separate from the formal Admissions module where an actual application is submitted.",
+    "Use Enquiries to manage potential students before they officially apply for admission. It helps you keep all interested families in one place, follow up with them, and update their progress from a new enquiry to a completed admission or a rejected enquiry.",
 
   steps: [
     {
       title: "Open the Enquiries page",
       description:
-        'From the sidebar, click Enquiries under People. The page shows four summary cards (Total, New, Contacted, Converted), a search bar, status filter tabs (All, New, Contacted, Converted, Rejected), a date range filter, and "How it Works," "Export," "QR Code," and "Add Enquiry" buttons.',
+        'From the left-side menu, click Enquiries. You will see a summary of your enquiries, including Total, New, Contacted, and Converted. You can search for an enquiry, filter enquiries by status or date, export the enquiry list, open the "How it Works" guide, view the QR Code, or add a new enquiry.',
       screenshot: {
         src: "/screenshots/school-admin/enquiries/enquiry_mainpage.png",
-        alt: "Enquiries page with summary cards, filters, and a list of enquiry cards",
+        alt: "Enquiries page showing enquiry summary and enquiry list",
         caption:
-          "Each enquiry card shows the child's name, status badge, source, class, parent names, phone, and date.",
+          "The Enquiries page helps you view and manage families who are interested in the school.",
       },
     },
+
     {
-      title: "Use the built-in How it Works guide",
+      title: "Use the How it Works guide",
       description:
-        'Click "How it Works" to open the "Enquiry Module — How it Works" guide, covering Module Overview, QR Code & Public Form, Adding Enquiries, Status Pipeline, Filters & Search, Exporting Data, and Pro Tips.',
+        'Click "How it Works" to open the built-in guide. It explains how to add enquiries, collect enquiries using the QR code, update enquiry status, search and filter enquiries, and export enquiry information.',
       screenshot: {
         src: "/screenshots/school-admin/enquiries/enquiry_howitworks.png",
-        alt: "Enquiry Module How it Works guide showing Module Overview page",
+        alt: "Enquiries How it Works guide",
         caption:
-          "The guide describes the Status Pipeline as moving leads through New, Contacted, Converted stages.",
+          "The guide explains the main steps for managing student enquiries.",
       },
     },
+
     {
       title: "Add an enquiry manually",
       description:
-        'Click "Add Enquiry" to open the "Add Enquiry" form. Fill in Father Name*, Mother Name*, Child Name*, Child DOB, Mobile No*, Email, Enquiry Class*, Address, Remark, and Source of Enquiry (dropdown, e.g. Admin, Walk-in, Referral). Submit to save it as a New lead.',
+        'Click "Add Enquiry" to enter information about a family that is interested in the school. Enter the father\'s name, mother\'s name, child\'s name, date of birth, mobile number, email, class they are interested in, address, and any additional remarks. You can also record how the family heard about the school, such as through a walk-in visit, referral, or school staff. Click "Save" to add the enquiry.',
       screenshot: {
         src: "/screenshots/school-admin/enquiries/enquiry_add.png",
-        alt: "Add Enquiry form with parent, child, and enquiry details fields",
+        alt: "Add Enquiry form showing parent, child, and enquiry information",
         caption:
-          "Required fields (marked *): Father Name, Mother Name, Child Name, Mobile No, and Enquiry Class.",
+          "Add the family's contact and student information so the enquiry can be followed up later.",
       },
     },
+
     {
-      title: "Share the public enquiry QR code",
+      title: "Collect enquiries using the QR Code",
       description:
-        'Click "QR Code" to open "Enquiry QR Code." Share the generated QR code (or copy the Form URL) with parents — scanning it opens a public enquiry form for your school directly, letting them self-register as a lead without staff manually entering their details. Click "Download QR" to save the image.',
+        'Click "QR Code" to open the school\'s enquiry QR code. You can share this QR code with parents at school events, on social media, or through other channels. When a parent scans the code, they can fill out the enquiry form themselves. You can also copy the form link or click "Download QR" to save the QR code.',
       screenshot: {
         src: "/screenshots/school-admin/enquiries/enquiry_qrcode.png",
-        alt: "Enquiry QR Code modal with QR image, form URL, and Download QR button",
+        alt: "Enquiry QR Code showing the school enquiry form link",
         caption:
-          "The Form URL follows the pattern skoolbyte.com/enquiry/your-school-slug.",
+          "Parents can scan the QR code and submit their enquiry without staff entering the information manually.",
       },
     },
+
     {
-      title: "View an enquiry's full details",
+      title: "View an enquiry",
       description:
-        'Click the eye icon on an enquiry card to open "Enquiry Details" — a read-only view of Father Name, Mother Name, Date of Birth, Mobile, Enquiry Class, Source, Trial Class Given, and Date submitted. Click "Edit" from here to jump straight into editing, or "Close" to dismiss.',
+        'Click the eye icon on an enquiry to see its complete information. You can view the parent names, child\'s date of birth, mobile number, class, source of enquiry, trial class information, and submission date. You can also click "Edit" if you need to make changes.',
       screenshot: {
         src: "/screenshots/school-admin/enquiries/enquiry_view.png",
-        alt: "Enquiry Details modal showing all fields for Mark's enquiry",
+        alt: "Enquiry Details showing student and parent information",
         caption:
-          '"Trial Class Given" tracks whether the prospective student has already attended a trial session.',
+          "Review the complete enquiry information before following up with the family.",
       },
     },
+
     {
-      title: "Edit an enquiry",
+      title: "Update an enquiry",
       description:
-        'Click the pencil icon on an enquiry card to open "Edit Enquiry," pre-filled with the same fields as Add Enquiry (Father Name, Mother Name, Child Name, Child DOB, Mobile No, Email, Enquiry Class, Address, Remark, Source of Enquiry, Counsellor Name). Update the status or any detail and save — this is also how you move a lead from New to Contacted, Converted, or Rejected.',
+        "Click the pencil icon to edit an enquiry. You can update the student's or parent's information, class, contact details, remarks, source, counsellor, or status. Update the status as you follow up with the family, such as moving it from New to Contacted, Converted, or Rejected.",
       screenshot: {
         src: "/screenshots/school-admin/enquiries/enquiry_edit.png",
-        alt: "Edit Enquiry form pre-filled with Mark's enquiry details",
+        alt: "Edit Enquiry form showing enquiry information",
         caption:
-          'The same form structure as Add Enquiry, pre-populated and titled "Edit Enquiry."',
+          "Update enquiry details and change the status as the admission process moves forward.",
       },
     },
+
+    {
+      title: "Track enquiry status",
+      description:
+        "Use the status of an enquiry to understand where each family is in the admission process. A new enquiry means the family has recently shown interest. Contacted means someone from the school has followed up. Converted means the enquiry has moved forward, while Rejected means the enquiry will not proceed.",
+    },
+
     {
       title: "Delete an enquiry",
       description:
-        'Click the trash icon on an enquiry card. A browser confirmation ("Delete this enquiry?") appears — click "OK" to confirm. This is immediate and permanent.',
+        'If an enquiry is no longer needed, click the trash icon on the enquiry. A confirmation message will appear asking "Delete this enquiry?" Click "OK" only if you are sure. Deleting an enquiry is permanent and cannot be undone.',
       screenshot: {
         src: "/screenshots/school-admin/enquiries/enquiry_delete.png",
-        alt: "Browser confirmation dialog asking Delete this enquiry?",
+        alt: "Confirmation message for deleting an enquiry",
         caption:
-          "Unlike student deletion, this uses a simple native browser confirm — no approval workflow.",
+          "Check the enquiry carefully before deleting it because the action cannot be undone.",
       },
     },
   ],
 
   bestPractices: [
-    "Share the QR Code at school events, on social media, or on your website — it's the fastest way to collect enquiries without staff data entry, and every submission arrives pre-tagged with the correct school.",
-    "Update an enquiry's status promptly as you work it (New → Contacted → Converted/Rejected) — the dashboard cards (Total, New, Contacted, Converted) reflect real-time counts your team likely relies on for follow-up priorities.",
-    "Once a family decides to apply, use the Admissions module for the formal application — Enquiries and Admissions are separate records, so converting a lead doesn't automatically create an admission.",
+    "Update enquiry statuses regularly so you always know which families need follow-up.",
+    "Use the QR Code at school events, on social media, or on your website to make it easier for parents to submit enquiries.",
+    "Record where each enquiry came from so you can understand which sources are bringing interested families to the school.",
+    "Follow up with new enquiries promptly so interested families do not get missed.",
+    "Once a family is ready to apply, move to the Admissions section to complete the formal admission process.",
   ],
 
   commonErrors: [
     {
-      issue: "Deleted an enquiry by accident",
-      fix: 'This can\'t be undone — deletion is immediate once you click "OK" on the confirmation dialog, so double-check before confirming.',
+      issue: "An enquiry was deleted by mistake.",
+      fix: "Deleted enquiries cannot be restored. Always check the enquiry details carefully before confirming the deletion.",
     },
     {
-      issue: "Can't find where to change an enquiry's status",
-      fix: "Status changes happen through the pencil (Edit) icon, not a separate status dropdown on the card itself — open Edit Enquiry and update the status field there.",
+      issue: "I cannot find where to change an enquiry's status.",
+      fix: "Click the pencil icon to open the Edit Enquiry form. The status can be changed there.",
+    },
+    {
+      issue: "A parent cannot submit an enquiry using the QR code.",
+      fix: "Check that the QR code or enquiry form link is correct. You can open the QR Code section and copy the form link again before sharing it with parents.",
     },
   ],
 
   faqs: [
     {
-      question: "What's the difference between an Enquiry and an Admission?",
+      question: "What is an enquiry?",
       answer:
-        "An Enquiry is an early-stage lead — someone expressing interest, often before deciding to apply. An Admission is the formal application itself, submitted through the separate Admissions module once a family is ready to proceed.",
+        "An enquiry is an expression of interest from a family who is considering enrolling their child in the school. It usually happens before the family submits a formal admission application.",
     },
     {
-      question:
-        "Can parents submit enquiries without a staff member creating them?",
+      question: "What is the difference between an Enquiry and an Admission?",
       answer:
-        "Yes — share the Enquiry QR Code or its Form URL, and parents can submit their own enquiry through a public form, which appears in your Enquiries list automatically.",
+        "An Enquiry is used when a family is interested in the school but has not yet submitted a formal application. An Admission is the formal application submitted when the family is ready to apply.",
     },
     {
-      question: "How do I see where my enquiries are coming from?",
+      question: "Can parents submit enquiries themselves?",
       answer:
-        "Each enquiry records a Source of Enquiry (e.g. Admin, Walk-in, Referral, or QR/public form submissions) — visible both on the enquiry card and in Enquiry Details.",
+        "Yes. You can share the school's enquiry QR code or form link with parents. They can fill out the form themselves, and the enquiry will appear in the Enquiries section.",
+    },
+    {
+      question: "How can I see where an enquiry came from?",
+      answer:
+        "Each enquiry has a Source of Enquiry field. It can show sources such as Admin, Walk-in, Referral, or an online enquiry form.",
+    },
+    {
+      question: "What do the enquiry statuses mean?",
+      answer:
+        "New means the enquiry has recently been received. Contacted means the school has followed up with the family. Converted means the enquiry has moved forward, while Rejected means the enquiry will not proceed.",
+    },
+    {
+      question: "Does converting an enquiry automatically create an admission?",
+      answer:
+        "No. Enquiries and Admissions are separate sections. When a family is ready to apply, you should use the Admissions section to create or complete the formal application.",
     },
   ],
 

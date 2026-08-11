@@ -4,107 +4,139 @@ export const feesContent = {
   category: "Finance",
 
   overview:
-    "Fee Management is where School Admins define fee structures per class (Fee Setup), generate invoices for individual students (Fee Invoices), track what's outstanding (Student Dues), and review collection reports (Reports).",
+    "The Fees section helps you manage school fees from one place. You can set up the fees students need to pay, create invoices for individual students, check unpaid fees, and view fee collection information.",
 
   purpose:
-    "Fees here are two-step by design: first you set up fee heads (what's charged, how much, how often, for which class) once under Fee Setup, then you generate actual invoices against those fee heads whenever a student needs to be billed. This separation keeps fee definitions consistent while letting invoicing stay flexible per student, month, or year.",
+    "First, set up the different types of fees your school charges, such as tuition, admission, transport, or examination fees. After the fees are set up, you can create invoices for individual students and track whether they have paid or still have an amount due.",
 
   steps: [
     {
       title: "Open Fee Management",
       description:
-        'From the sidebar, click Fees under Finance. The page header shows a running summary (e.g. "3 active fee types • ₹3,55,000/year") and has four tabs: Fee Invoices, Student Dues, Reports, and Fee Setup, plus a "How it works" guide and an "Export Students" button.',
+        'From the left-side menu, click Fees. You will see four sections: Fee Invoices, Student Dues, Reports, and Fee Setup. You can also open the "How it works" guide or export student information when needed.',
       screenshot: {
         src: "/screenshots/school-admin/fees_setup.png",
-        alt: "Fee Management page on the Fee Setup tab with search, filters, and a fee heads table",
+        alt: "Fee Management page showing Fee Setup and fee information",
         caption:
-          "The Fee Setup tab — search, frequency/status/category filters, and status badges (Total/Active/Inactive/Optional) above the table.",
+          "The Fees section brings fee setup, invoices, unpaid fees, and reports together in one place.",
       },
     },
+
     {
-      title: "Use the built-in Fee System Guide",
+      title: "Use the Fee System Guide",
       description:
-        'Click "How it works" to open the "School ERP — Fee System Guide." It walks through Fee Setup (do this once before generating any invoices) step by step: go to Fee Setup, click "+ Add Fee Head," fill in the fields per class, use "Other" in the Fee Type dropdown for a charge not already listed, apply special fees (like Exam or Picnic Fee) to a specific class or set them Global for the whole school, and set the Money Flow Type to control whether a fee adds to or subtracts from a student\'s total.',
+        'Click "How it works" to open the Fee System Guide. It explains how to set up fees before creating invoices. The guide also explains how to add different types of fees, apply fees to a class or the whole school, and choose whether a fee adds to or reduces the amount a student needs to pay.',
       screenshot: {
         src: "/screenshots/school-admin/fees_howitworks.png",
-        alt: "School ERP Fee System Guide showing numbered steps for Fee Setup",
+        alt: "Fee System Guide explaining how to set up school fees",
         caption:
-          "This guide is scoped to Fee Setup specifically — it's the recommended first stop before creating any invoices.",
+          "Use the guide if you need help setting up fees before creating student invoices.",
       },
     },
+
     {
-      title: "Add a fee head",
+      title: "Add a new fee",
       description:
-        'On the Fee Setup tab, click "Add Fee Head." Optionally start from a Quick Select Preset (Tuition Fee, Admission Fee, Annual Charges, Development Fund, Examination Fee, Computer Lab Fee, Library Fee, Sports Fee) to prefill common fields, then set Fee Type* (e.g. Transportation Fee), Fee Name*, Fee Category (e.g. Standard — Admission/Tuition), Class*, Amount (₹)*, Money Flow Type (e.g. "+ Add (Fee)"), and Frequency (e.g. Yearly). Check "Optional Fee" if students may choose whether to pay it.',
+        'Open Fee Setup and click "Add Fee Head" to create a new type of fee. You can choose a ready-made option such as Tuition Fee, Admission Fee, Annual Charges, Examination Fee, Library Fee, or Sports Fee. You can also choose "Other" if the fee you need is not listed. Then enter the fee name, category, class, amount, how the fee affects the student\'s total, and how often it should be charged. You can also mark the fee as optional if students do not have to pay it.',
       screenshot: {
         src: "/screenshots/school-admin/fees_adding.png",
-        alt: "Add Fee Head form with Quick Select Presets and fee configuration fields",
+        alt: "Add Fee Head form showing fee options and fee details",
         caption:
-          "Presets fill in Fee Type and a suggested Fee Name — you still set Class and Amount yourself.",
+          "Choose a common fee from the presets or create your own fee and enter its amount and other details.",
       },
     },
+
     {
-      title: "Edit a fee head",
+      title: "Edit a fee",
       description:
-        'Click the pencil icon on a fee head row to open "Edit Fee Head," pre-filled with its current Fee Type, Fee Name, Fee Category, Class, Amount, Money Flow Type, Frequency, Status, and Optional Fee setting. Update and save.',
+        "If you need to change a fee, click the pencil icon next to it. You can update the fee name, category, class, amount, payment frequency, status, and other settings. Click save after making your changes.",
       screenshot: {
         src: "/screenshots/school-admin/fees_edit.png",
-        alt: "Edit Fee Head modal pre-filled with Tuition Fee details for Class 2",
+        alt: "Edit Fee Head form showing existing fee details",
         caption:
-          "Status here (Active/Inactive) controls whether this fee head can be selected when generating new invoices.",
+          "You can update fee details when the school's fee structure changes.",
       },
     },
+
     {
-      title: "Generate an invoice",
+      title: "Generate a student invoice",
       description:
-        'Switch to the Fee Invoices tab. Under Invoice Details, choose the Class and Student, then set Invoice Type (e.g. Monthly), Month, and Year. Under Select Fee Heads, check which fee heads to include for that student — each shows its computed amount, with a running Subtotal and Net Total. Optionally enable EMI Options, then click "Generate Invoice Now."',
+        'Open the Fee Invoices section to create a bill for a student. First, select the class and student. Then choose the invoice type, month, and year. Select the fees that should be included in the invoice. The system will calculate the subtotal and total amount. You can also use EMI options when available. Finally, click "Generate Invoice Now" to create the invoice.',
       screenshot: {
         src: "/screenshots/school-admin/fees_invoice.png",
-        alt: "Fee Invoices tab with Invoice Details, Select Fee Heads, and Generate Invoice Now button",
+        alt: "Fee Invoice form showing student, fee selection, and invoice details",
         caption:
-          "Monthly invoices auto-divide a Yearly fee head's amount — ₹16,666.67 shown here from a ₹2,00,000 annual Class 2 fee.",
+          "Select the student and fees to create an invoice with the correct amount.",
       },
+    },
+
+    {
+      title: "Check student dues",
+      description:
+        "Open the Student Dues section to check which students still have unpaid fees. This helps you quickly identify students with outstanding payments and follow up when necessary.",
+    },
+
+    {
+      title: "Check payment history",
+      description:
+        "You can also check a student's payment history from the Fee Invoices section. This helps you see previous invoices and payments and understand whether a student's fees have been paid.",
     },
   ],
 
   bestPractices: [
-    "Complete all your Fee Setup for the academic year before generating the first invoice — changing a fee head's amount after invoices have already been generated against it won't retroactively update those invoices.",
-    'Use the Money Flow Type field deliberately — most fee heads should be "+ Add (Fee)", but discounts or waivers are modeled as a subtracting flow type instead of a separate discount feature.',
-    "Mark genuinely optional charges (like a sports kit fee) as Optional Fee so they don't get bundled into every student's invoice by default.",
+    "Set up the complete fee structure for the academic year before creating student invoices.",
+    "Check the fee amount and class carefully before saving a fee.",
+    "Mark fees as optional only when students are not required to pay them.",
+    "Use the correct payment frequency, such as Monthly or Yearly, so invoices are calculated correctly.",
+    "Check Student Dues regularly to keep track of unpaid fees.",
+    "Review important invoices before sharing them with students or parents.",
   ],
 
   commonErrors: [
     {
-      issue: "Can't find the fee type I need in the dropdown",
-      fix: 'Select "Other" from the Fee Type dropdown in Add Fee Head to define a custom charge not covered by the built-in presets.',
+      issue: "The fee I need is not available in the fee type list.",
+      fix: 'Select "Other" when adding a fee. This allows you to create a custom fee that is not included in the standard options.',
     },
     {
-      issue: "Invoice amount doesn't match the fee head's listed Amount",
-      fix: "Check the selected Invoice Type and Frequency — a Yearly fee head billed on a Monthly invoice is automatically divided (e.g. ₹2,00,000/year → ₹16,666.67/month), which is expected behavior, not an error.",
+      issue: "The invoice amount is different from the fee amount I entered.",
+      fix: "Check the invoice type and fee frequency. For example, a yearly fee can be divided into monthly payments when you create a monthly invoice. This is expected behavior.",
     },
     {
-      issue:
-        "A fee head isn't showing up in Select Fee Heads when generating an invoice",
-      fix: "Confirm the fee head's Status is Active and its Class matches the student's class — inactive or mismatched-class fee heads won't appear as selectable.",
+      issue: "A fee is not available when creating an invoice.",
+      fix: "Check that the fee is Active and is assigned to the same class as the student. Inactive fees or fees assigned to another class will not be available for selection.",
     },
   ],
 
   faqs: [
     {
-      question: "What's the difference between Fee Setup and Fee Invoices?",
+      question: "What is Fee Setup used for?",
       answer:
-        "Fee Setup defines the fee rules (what's charged, how much, how often, which class) once. Fee Invoices is where you actually bill a specific student against those rules, for a specific month/year.",
+        "Fee Setup is where you create and manage the different types of fees your school charges. You can set the fee amount, class, and how often it should be charged.",
     },
     {
-      question: "Can a fee apply to the whole school instead of one class?",
+      question: "What is a Fee Invoice?",
       answer:
-        "Yes — when adding a fee head, you can set it as Global rather than tying it to one specific class, which applies it to every student school-wide (covered in the built-in Fee System Guide).",
+        "A Fee Invoice is a bill created for a specific student. It shows the fees the student needs to pay and the total amount due.",
     },
     {
-      question:
-        "Where do I see whether a student has actually paid an invoice?",
+      question: "Can I create a fee for the whole school?",
       answer:
-        "Check the Student Dues tab for outstanding amounts, or scroll to Student Payment History below the invoice generator on the Fee Invoices tab.",
+        "Yes. A fee can be set as Global when the fee should apply to students across the school instead of only one specific class.",
+    },
+    {
+      question: "Can I create a fee that students do not have to pay?",
+      answer:
+        "Yes. When creating a fee, you can mark it as an Optional Fee. This is useful for charges that students can choose whether to pay.",
+    },
+    {
+      question: "Where can I check unpaid fees?",
+      answer:
+        "Open the Student Dues section to see outstanding amounts and identify students who still have fees to pay.",
+    },
+    {
+      question: "Where can I check a student's previous payments?",
+      answer:
+        "You can check the Student Payment History in the Fee Invoices section to review previous invoices and payments.",
     },
   ],
 

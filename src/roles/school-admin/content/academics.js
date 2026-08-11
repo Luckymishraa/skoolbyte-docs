@@ -4,258 +4,288 @@ export const academicsContent = {
   category: "Academics",
 
   overview:
-    "The Academics Module is the most critical part of the ERP — it defines the structure of your school: Classes, Sections, Subjects, and Academic Years. Everything else in the ERP depends on the setup here.",
+    "The Academics section is where you set up and manage the basic academic structure of your school. You can manage academic years, classes, sections, subjects, teachers, timetables, school periods, working days, and student promotions from one place.",
 
   purpose:
-    "This is where the school's academic skeleton is built, in order: Academic Year → Classes & Sections → Subject Allocation → Class Teachers → Timetable → Periods & Days → Promotion. Getting this hierarchy right first is what makes Attendance, Fees, Homework, and every other class-linked module work correctly.",
+    "Use this section to set up how your school is organized for each academic year. Start by setting the academic year, then create classes and sections, assign subjects and teachers, set up the timetable, define school days and periods, and finally promote students to their next class at the end of the year.",
 
   steps: [
     {
       title: "Open Academic Management",
       description:
-        "From the sidebar, click Academics under Academics. The page shows the Current Year and nine tabs, scrollable with left/right arrows: Academic Year, Classes, Sections, Subjects, Subject Allocation, Class Teachers, Timetable, Periods & Days, and Promotion.",
+        "From the left-side menu, click Academics. You will see the current academic year and different sections for managing your school's academic information. These include Academic Year, Classes, Sections, Subjects, Subject Allocation, Class Teachers, Timetable, Periods & Days, and Promotion. If you cannot see all the sections, use the arrow buttons to move through the list.",
       screenshot: {
         src: "/screenshots/school-admin/academics/academic_mainpage.png",
-        alt: "Academic Management page showing tab navigation and Current Year 2026-27",
+        alt: "Academic Management page showing the different academic sections",
         caption:
-          "The tab bar scrolls — use the arrow buttons on either side to see all nine sections.",
+          "Academic Management brings all the school's academic settings together in one place.",
       },
     },
+
     {
-      title: "Use the built-in How it Works guide",
+      title: "Use the How it Works guide",
       description:
-        'Click "How it Works" to open the "Academics Module — How it Works" guide, covering Module Overview, Setup Hierarchy, Classes & Sections, Subjects & Allocation, Timetable Builder, Student Promotion, and Pro Tips.',
+        'Click "How it Works" if you need help understanding the Academics section. The guide explains how to set up classes and sections, subjects, teachers, timetables, and student promotions. It also explains the recommended order for setting everything up.',
       screenshot: {
         src: "/screenshots/school-admin/academics/academic_hoeitworks.png",
-        alt: "Academics Module How it Works guide showing Module Overview with Classes & Sections, Subject Mapping, Timetable, and Promotions cards",
+        alt: "Academics How it Works guide",
         caption:
-          "The guide frames the setup order as: Classes & Sections → Subject Mapping → Timetable → Promotions.",
+          "The guide explains the main steps for setting up your school's academic information.",
       },
     },
+
     {
-      title: "Manage Academic Years",
+      title: "Set up Academic Years",
       description:
-        'On the Academic Year tab, view all configured years as cards (Start Date, End Date, Status — Active or Upcoming). Click "+ Add Year" to open "Add Academic Year": enter Year Name* (e.g. "2025-26"), Start Date*, End Date*, and Status. An upcoming year can later be made current via "Set Active."',
+        'Open the Academic Year tab to see the academic years already added. Each year shows its start date, end date, and status. To add a new year, click "+ Add Year" and enter the year name, start date, end date, and status. When you are ready to use a future academic year, you can make it active by clicking "Set Active."',
       screenshot: {
         src: "/screenshots/school-admin/academics/academic_Add.png",
-        alt: "Academic Years tab showing 2027-28 Upcoming and 2026-27 Active cards",
+        alt: "Academic Years showing active and upcoming academic years",
         caption:
-          "Only one academic year is Active at a time — the others show as Upcoming or past.",
+          "You can see which academic year is currently active and which years are coming next.",
       },
     },
+
     {
-      title: "Create and organize Classes",
+      title: "Create Classes",
       description:
-        'Switch to the Classes tab to see the Class & Section Hierarchy — each class card shows its section count, capacity, and assigned class teacher. Click "+ Add Class" to open a form: Class Name* (dropdown, e.g. "Nursery (Pre-Nursery)"), Display Name, Class Teacher, Sections (on create — e.g. "B"), and Capacity.',
+        'Open the Classes tab to see all the classes in your school. Each class shows the number of sections, student capacity, and assigned class teacher. To add a new class, click "+ Add Class" and enter the class name, display name, class teacher, sections, and student capacity.',
       screenshot: {
         src: "/screenshots/school-admin/academics/academic_add_classes.png",
-        alt: "Class & Section Hierarchy showing Class 1, Class 2, LKG, Pre-Nursery, and UKG cards",
+        alt: "Class and Section list showing different classes",
         caption:
-          "6 classes configured — each shows how many sections exist under it and total capacity.",
+          "Each class shows its sections, student capacity, and assigned teacher.",
       },
     },
+
     {
-      title: "Edit a class",
+      title: "Edit a Class",
       description:
-        'Click the pencil icon on the desired class card to open the "Edit Class" modal. Update the Class Name, Display Name, Class Teacher, Sections, or Capacity as needed, then click "Update" to save your changes.',
+        'If you need to change class information, click the pencil icon on the class. You can update the class name, display name, class teacher, sections, or student capacity. Click "Update" after making your changes.',
       screenshot: {
         src: "/screenshots/school-admin/academics/academic_classes_ediclass.png",
-        alt: "Edit Class modal with fields for Class Name, Display Name, Class Teacher, Sections, and Capacity",
+        alt: "Edit Class form",
         caption:
-          "Review all details before updating to ensure the class information is accurate.",
+          "Update class information whenever details such as the teacher or capacity change.",
       },
     },
+
     {
-      title: "Delete a class",
+      title: "Delete a Class",
       description:
-        'Click the trash icon on the class card you want to remove. A confirmation dialog will appear, warning that the action is permanent. Review the class details and click "Delete" to permanently remove the class.',
+        'If a class is no longer needed, click the trash icon on the class. A confirmation message will appear. Check the class details carefully before clicking "Delete" because deleting a class cannot be undone.',
       screenshot: {
         src: "/screenshots/school-admin/academics/academic_classes_deleteclass.png",
-        alt: "Delete Class confirmation dialog",
+        alt: "Delete Class confirmation message",
         caption:
-          "Deleting a class is irreversible. Ensure there are no active sections or enrolled students before proceeding.",
+          "Check the class carefully before deleting it because the action cannot be undone.",
       },
     },
+
     {
       title: "Manage Sections",
       description:
-        'Switch to the Sections tab to see every section as a card (e.g. "Class 1 - A"), showing enrollment vs. max strength (e.g. "0/40"), assigned teacher, and Room No. Click "+ Add Section" to open a form: Class*, Section Name*, Max Strength, Class Teacher, and Room Number.',
+        'Open the Sections tab to see the sections created under each class, such as "Class 1 - A" or "Class 1 - B". Each section shows the number of students, maximum student capacity, assigned teacher, and room number. To create a new section, click "+ Add Section" and enter the class, section name, maximum number of students, class teacher, and room number.',
       screenshot: {
         src: "/screenshots/school-admin/academics/academic_section_addsection.png",
-        alt: "Section Management grid showing Class 1-A, Class 1-B, Class 2-A, LKG-A, Nursery-A, and Pre-Nursery-B cards",
+        alt: "Section Management showing sections for different classes",
         caption:
-          '"No teacher assigned" appears until a class teacher is set for that specific section.',
+          "Each section belongs to a class and can have its own teacher and classroom.",
       },
     },
+
     {
-      title: "Add a section",
+      title: "Add a Section",
       description:
-        'Open the "Add Section" form and enter the required details, including Class, Section Name, Max Strength, Class Teacher, and Room Number. Once all information is complete, click "Save" to create the new section.',
+        'Click "+ Add Section" and enter the required information: Class, Section Name, Maximum Students, Class Teacher, and Room Number. Once everything is filled in, click "Save" to create the section.',
       screenshot: {
         src: "/screenshots/school-admin/academics/academic_section_addsection.png",
-        alt: "Add Section form with fields for Class, Section Name, Max Strength, Class Teacher, and Room Number",
+        alt: "Add Section form",
         caption:
-          "Each section belongs to a class and can have its own Class Teacher and room assignment.",
+          "Add the class, section name, student capacity, teacher, and room before saving.",
       },
     },
+
     {
-      title: "Edit a section",
+      title: "Edit a Section",
       description:
-        'Click the pencil icon on the section card to open the "Edit Section" modal. Update the Class, Section Name, Max Strength, Class Teacher, or Room Number as needed, then click "Update" to save your changes.',
+        'Click the pencil icon on a section to change its information. You can update the class, section name, maximum number of students, class teacher, or room number. Click "Update" to save the changes.',
       screenshot: {
         src: "/screenshots/school-admin/academics/academic_section_editsection.png",
-        alt: "Edit Section modal with fields for Class, Section Name, Max Strength, Class Teacher, and Room Number",
-        caption:
-          "Review the updated details before saving to keep section information accurate.",
+        alt: "Edit Section form",
+        caption: "Keep section information updated whenever there are changes.",
       },
     },
+
     {
-      title: "Review Subjects",
+      title: "View Subjects",
       description:
-        'Switch to the Subjects tab — labeled "Subjects (Managed by Super Admin)." This is a read-only view of the master subject list (Class, Subject, Code, Type, Curriculum preview, Contents count, Status) — the same data set up centrally by the Super Admin.',
+        "Open the Subjects tab to see the subjects available for different classes. You can view information such as the class, subject name, subject code, subject type, and status. Subjects are managed by the Super Admin, so they cannot be created or edited from this section.",
       screenshot: {
         src: "/screenshots/school-admin/academics/academic_subject.png",
-        alt: "Subjects tab showing General Knowledge, Science, Mathematics, and English rows across different classes",
+        alt: "Subjects list showing subjects for different classes",
         caption:
-          'The "Managed by Super Admin" label is a hint — subjects themselves aren\'t created here.',
+          "The Subjects section lets you view the subjects available for your school.",
       },
     },
+
     {
-      title: "Delete a section",
+      title: "Delete a Section",
       description:
-        'Click the trash icon on the section card you want to remove. A confirmation dialog will appear asking you to verify the action. Click "Delete" to permanently remove the section.',
+        'To remove a section, click the trash icon on the section. You will be asked to confirm the deletion. Check the section carefully and click "Delete" only if you are sure. Deleting a section cannot be undone.',
       screenshot: {
         src: "/screenshots/school-admin/academics/academic_section_deletesection.png",
-        alt: "Delete Section confirmation dialog",
+        alt: "Delete Section confirmation message",
         caption:
-          "Deleting a section is permanent. Make sure there are no enrolled students or active records associated with it before proceeding.",
+          "Make sure the section is no longer needed before deleting it.",
       },
     },
+
     {
-      title: "Allocate a subject to a class-section and teacher",
+      title: "Assign Subjects to Classes",
       description:
-        'Switch to the Subject Allocation tab to see a table of Class/Section/Subject/Teacher combinations. Click "+ Allocate Subject" to open a form: Class - Section* (e.g. "Class 2 - A"), Subject*, Teacher, and Periods Per Week. This is what actually assigns who teaches what, to which section.',
+        'Open Subject Allocation to decide which subjects are taught to which class and section, and which teacher will teach them. Click "+ Allocate Subject" and select the class and section, subject, teacher, and number of periods per week. This information is then used when creating the timetable.',
       screenshot: {
         src: "/screenshots/school-admin/academics/academic_allocatesubjet_add.png",
-        alt: "Allocate Subject form with Class 2 - A, Science, Rekha Verma, and 5 Periods Per Week",
+        alt: "Allocate Subject form",
         caption:
-          "Periods Per Week here feeds directly into how many timetable slots that subject can be scheduled.",
+          "Assign a subject and teacher to a specific class and section.",
       },
     },
+
     {
-      title: "Edit a subject allocation",
+      title: "Edit a Subject Assignment",
       description:
-        'Click the pencil icon on an allocation row to open "Edit Allocation" — update Class - Section, Subject, Teacher, or Periods Per Week, then click "Update."',
+        'Click the pencil icon next to an existing subject assignment to make changes. You can change the class and section, subject, teacher, or number of periods per week. Click "Update" to save the changes.',
       screenshot: {
         src: "/screenshots/school-admin/academics/academic_allocatesubject_edit.png",
-        alt: "Edit Allocation modal for Class 1 - A, General Knowledge, Kamalpreet Sharma, 5 periods per week",
+        alt: "Edit Subject Assignment form",
         caption:
-          "Changing the Teacher here reassigns who's responsible for that subject in that section going forward.",
+          "You can change the teacher or other subject details whenever needed.",
       },
     },
+
     {
       title: "Assign Class Teachers",
       description:
-        'Switch to the Class Teachers tab to see each teacher with their Class Teacher (whole-class) and Section Teacher (specific section) assignments, plus a total Assignments count. Click "+ Assign Teacher" to open a form: Assignment Type* (e.g. "Class Teacher"), Teacher*, and Class*.',
+        'Open the Class Teachers tab to see which teachers are responsible for each class or section. Click "+ Assign Teacher" to assign a teacher. Select the type of assignment, teacher, and class. A teacher can be responsible for a complete class or a specific section.',
       screenshot: {
         src: "/screenshots/school-admin/academics/academic_Classteacher_mainpage.png",
-        alt: "Class Teacher tab showing Sushmita Mehra with 2 Assignments (Class 2 as Class Teacher, Class 1-B as Section Teacher)",
+        alt: "Class Teachers section showing teacher assignments",
         caption:
-          "A teacher can hold both a Class Teacher role and separate Section Teacher roles simultaneously.",
+          "Assign teachers to classes or specific sections according to your school's requirements.",
       },
     },
+
     {
-      title: "Build the Timetable",
+      title: "Create the Timetable",
       description:
-        'Switch to the Timetable tab, select a Class and Section, then view the weekly grid (Days × Periods). Click "Edit" to enter edit mode, then click any empty "+ Assign" slot to open "Assign Subject" — pick a subject/teacher pairing from those already allocated, or "Clear Slot" to remove one. Click "Save" to apply changes, "Cancel" to discard, or "Export PDF" to download.',
+        'Open the Timetable tab and select a class and section to view its weekly timetable. Click "Edit" when you want to make changes. You can add subjects to empty time slots, remove existing subjects, and save your changes. You can also export the completed timetable as a PDF.',
       screenshot: {
         src: "/screenshots/school-admin/academics/academic_timetable_mainpage.png",
-        alt: "Timetable Management in edit mode for Class 1-A with General Knowledge assigned across Monday-Thursday Period 1",
+        alt: "Timetable for a class and section",
         caption:
-          'Edit mode shows "Cancel" and "Save" buttons; view mode (after saving) shows "Edit" and "Export PDF" instead.',
+          "Create and manage the weekly timetable for each class and section.",
       },
     },
+
     {
-      title: "Assign a subject to a timetable slot",
+      title: "Add a Subject to the Timetable",
       description:
-        'Clicking "+ Assign" on a slot opens "Assign Subject" for that Day and time — showing "Clear Slot" (remove current assignment) plus a list of subjects already allocated to that class-section (via Subject Allocation), each showing the teacher and periods/week.',
+        'Click "+ Assign" in an empty timetable slot to choose a subject and teacher. Only subjects that have already been assigned to that class and section in Subject Allocation will be available. If a subject is missing, add it to Subject Allocation first.',
       screenshot: {
         src: "/screenshots/school-admin/academics/academic_timetable_assign.png",
-        alt: "Assign Subject modal for Monday 09:10 showing Clear Slot and General Knowledge with Kamalpreet Sharma, 5 pds/wk",
+        alt: "Assign Subject to a timetable slot",
         caption:
-          "Only subjects already set up via Subject Allocation appear here — allocate the subject first if it's missing.",
+          "Choose an already assigned subject and teacher for each timetable slot.",
       },
     },
+
     {
-      title: "Configure Periods & Working Days",
+      title: "Set School Periods and Working Days",
       description:
-        'Switch to the Periods & Days tab. The Period Schedule lists every period (Assembly, Period 1-6, Short Break, Lunch Break) with times, editable/deletable via the pencil/trash icons. Click "+ Add Period" to open a form: Period Name*, Start Time*, End Time*, Type (e.g. Class), and Sequence. Working Days on the right lets you toggle Monday–Saturday on/off.',
+        "Open Periods & Days to set the school's daily schedule. You can add or edit periods such as Assembly, classes, Short Break, and Lunch Break by entering their names and start and end times. You can also choose which days of the week the school operates, such as Monday to Saturday.",
       screenshot: {
         src: "/screenshots/school-admin/academics/academic_periodsday_aminpage.png",
-        alt: "Period & Working Days Setup showing Assembly through Period 6 with times, and Monday-Saturday toggles all enabled",
+        alt: "Periods and Working Days settings",
         caption:
-          "Disabling a Working Day here (e.g. turning off Saturday) removes it as a schedulable day across the Timetable.",
+          "Set the school's daily periods and choose which days the school operates.",
       },
     },
+
     {
-      title: "Promote students to the next class",
+      title: "Promote Students to the Next Class",
       description:
-        'Switch to the Promotion tab for the 3-step Promotion & Class Progression flow. Step 1 (Select Source): choose a From Class and Section, then "Fetch Students." Step 2 (Select Students): check which fetched students to promote. Step 3 (Promote To): choose a Target Class and Section, review the Summary (Total Selected, Move To), then click "Promote Students."',
+        'At the end of the academic year, use the Promotion tab to move students to their next class. First, select the current class and section and fetch the students. Then select the students who should be promoted. Finally, choose the new class and section, review the details, and click "Promote Students."',
       screenshot: {
         src: "/screenshots/school-admin/academics/academic_promotion_add.png",
-        alt: "Promotion & Class Progression showing Class 1-A students Riya Kumari and Aniket Mehra being moved to Class 2-A",
+        alt: "Student Promotion showing students moving to the next class",
         caption:
-          "This is typically run once per year, at the end of the academic session, before setting the next year Active.",
+          "Review the selected students and their new class carefully before confirming the promotion.",
       },
     },
   ],
 
   bestPractices: [
-    "Follow the setup order the How it Works guide suggests: Academic Year → Classes & Sections → Subject Allocation → Class Teachers → Timetable → Periods & Days — each step depends on the one before it.",
-    "Confirm a subject is allocated (Subject Allocation tab) before trying to place it on the Timetable — unallocated subjects won't appear in the Assign Subject picker.",
-    "Run Student Promotion only after finalizing the current year's records — once students move to the next class, historical class-wise reports reflect their new placement.",
-    "Keep Working Days accurate on the Periods & Days tab — a day left enabled that the school doesn't actually operate on will still appear as a schedulable day in the Timetable.",
+    "Set up the academic year first, followed by classes, sections, subjects, teachers, and the timetable.",
+    "Assign subjects to a class and section before trying to add them to the timetable.",
+    "Check all student details carefully before promoting students to the next class.",
+    "Keep the school's working days and daily periods updated so the timetable matches the actual school schedule.",
+    "Review class and section information regularly to make sure teachers, rooms, and student capacity are correct.",
   ],
 
   commonErrors: [
     {
-      issue:
-        "A subject doesn't appear when trying to assign it on the Timetable",
-      fix: "Check Subject Allocation first — a subject must be allocated to that specific class-section (with a teacher and periods/week) before it can be placed into a timetable slot.",
+      issue: "A subject is not available when creating the timetable.",
+      fix: "Open Subject Allocation and check that the subject has been assigned to the correct class and section. A subject must be assigned there before it can be added to the timetable.",
     },
     {
-      issue: "Deleted a class or section by mistake",
-      fix: "This is irreversible — both actions show a confirmation warning that the data will be permanently removed, so double-check before confirming.",
+      issue: "A class or section was deleted by mistake.",
+      fix: "Deleting a class or section cannot be undone. Always check the details carefully before confirming the deletion.",
     },
     {
-      issue: "Promoted the wrong group of students",
-      fix: 'Carefully review the Summary (Total Selected, Move To) in Step 3 before clicking "Promote Students" — verify the correct students are checked in Step 2.',
+      issue: "The wrong students were selected for promotion.",
+      fix: 'Before clicking "Promote Students," check the selected students and make sure the correct new class and section are shown.',
     },
   ],
 
   faqs: [
     {
-      question: "Why can't I edit subjects directly from the Academics module?",
+      question: "What can I manage from the Academics section?",
       answer:
-        'Subjects are managed centrally by the Super Admin at the platform level — the Subjects tab here (labeled "Managed by Super Admin") is a read-only view of that master list.',
+        "You can manage academic years, classes, sections, subjects, teacher assignments, timetables, school periods, working days, and student promotions.",
+    },
+    {
+      question: "Can I create or edit subjects?",
+      answer:
+        "No. Subjects are managed by the Super Admin. You can view the available subjects and assign them to classes, sections, and teachers.",
+    },
+    {
+      question: "What is the difference between a Class and a Section?",
+      answer:
+        "A class is the main level, such as Class 1 or Class 2. A section is a smaller group within that class, such as Class 1-A or Class 1-B.",
     },
     {
       question:
-        "What's the difference between a class's Class Teacher and a section's Class Teacher?",
+        "Why do I need to assign a subject before adding it to the timetable?",
       answer:
-        "A class-level Class Teacher (set on the Classes tab) is distinct from a Section Teacher (set on the Sections tab or via the Class Teachers tab) — a teacher can hold both roles for different classes/sections at once.",
+        "Subject Allocation tells the system which subjects are taught to each class and section and which teacher is responsible for them. Only these assigned subjects can be added to the timetable.",
     },
     {
-      question:
-        "Does Student Promotion delete the students' history in their old class?",
+      question: "What is student promotion used for?",
       answer:
-        "Promotion moves students to a new Target Class and Section — check your Students module afterward to confirm historical records (fees, attendance) remain tied to the correct academic year rather than being lost.",
+        "Student Promotion is used at the end of the academic year to move students from their current class to the next class.",
+    },
+    {
+      question: "Can I undo a student promotion?",
+      answer:
+        "The promotion process moves the selected students to the new class and section. Always review the selected students and destination class carefully before confirming the promotion.",
     },
   ],
 
   relatedModules: [
     { title: "Students", slug: "students" },
-    { title: "Teacher", slug: "teachers" },
+    { title: "Teachers", slug: "teachers" },
     { title: "Fees", slug: "fees" },
   ],
 };

@@ -4,92 +4,152 @@ export const admissionsContent = {
   category: "People",
 
   overview:
-    "The Admissions module manages formal student applications — both those you create directly (Admission Records) and those submitted by parents through your public Online Admission Portal.",
+    "The Admissions section is used to manage student applications. You can add applications yourself or receive applications submitted by parents through the school's Online Admission Portal.",
 
   purpose:
-    "This is the formal application stage that follows Enquiries: once a family is ready to apply, an admission record captures full student, academic, and guardian details, which a School Admin then reviews, approves, or rejects.",
+    "Use this section when a student is ready to apply for admission. You can collect the student's information, academic details, parent or guardian information, and address. After receiving an application, you can review it and decide whether to approve or reject it.",
 
   steps: [
     {
       title: "Open the Admissions page",
       description:
-        'From the sidebar, click Admissions under People. The page has two tabs — Admission Records (a table of submitted applications with Name, Application number, Class, Status, Guardian, Referred By, and Date) and Online Admission (portal settings) — plus a "New Admission" button and, on Admission Records, a search bar, status filter, and "Export" button.',
+        "From the left-side menu, click Admissions. You will see two sections: Admission Records and Online Admission. Admission Records shows all student applications, including the student's name, application number, class, status, guardian, who referred the student, and application date. You can also search for an application, filter applications by status, export the list, or create a new admission.",
       screenshot: {
         src: "/screenshots/school-admin/admissions/admission_mainpage.png",
-        alt: "Admission Records tab showing a table with one Pending application",
+        alt: "Admissions page showing the list of student applications",
         caption:
-          'Kavya Mishra\'s application (ADM260001) shown here with status "Pending."',
+          "The Admissions page lets you view and manage all student applications.",
       },
     },
+
     {
-      title: "Create a new admission application",
+      title: "Create a new admission",
       description:
-        'Click "New Admission" to open the "New Admission Application" form — a 5-step wizard. Step 1 collects First Name*, Last Name*, Date of Birth*, Gender*, Blood Group, Religion, Caste, and Category, then "Next" continues through the remaining steps (academic details, guardian details, address, and document/review).',
+        'Click "New Admission" to create an application yourself. The form is divided into five steps. First, enter the student\'s basic information such as name, date of birth, gender, blood group, religion, caste, and category. The next steps collect academic information, parent or guardian details, address, and documents. Review the information before submitting the application.',
       screenshot: {
         src: "/screenshots/school-admin/admissions/admission_Add.png",
-        alt: "New Admission Application form, step 1 of 5",
+        alt: "New Admission Application form",
         caption:
-          "Steps 2–5 continue with academic, guardian, address, and final review details before submission.",
+          "Complete the admission form step by step with the student's personal, academic, and family information.",
       },
     },
+
     {
-      title: "Review and approve or reject an application",
+      title: "Review an admission application",
       description:
-        'Click an application row (or its eye icon) to open its full details — grouped into Student Details, Academic Details, Parent/Guardian Details, and Address. From here, click "Reject Application" or "Approve Application" to move the admission out of Pending status.',
+        "Click an application from the list, or click the eye icon, to view its complete details. You can review the student's information, academic details, parent or guardian information, and address. Check the information carefully before making a decision about the application.",
       screenshot: {
         src: "/screenshots/school-admin/admissions/admission_view.png",
-        alt: "Admission application detail view with Reject and Approve buttons",
+        alt: "Admission application details with approve and reject options",
         caption:
-          "This is the same detail view whether the application arrived via New Admission or the public Online Admission Portal.",
+          "Review the student's information before approving or rejecting the application.",
       },
     },
+
+    {
+      title: "Approve or reject an application",
+      description:
+        'After reviewing an application, you can choose "Approve Application" or "Reject Application." Approving accepts the application, while rejecting moves the application out of the pending list. Make sure the application details are correct before making your decision.',
+      screenshot: {
+        src: "/screenshots/school-admin/admissions/admission_view.png",
+        alt: "Admission application with Approve and Reject buttons",
+        caption:
+          "Use the Approve or Reject button after checking the application details.",
+      },
+    },
+
     {
       title: "Set up the Online Admission Portal",
       description:
-        'Switch to the Online Admission tab to manage public self-service applications. Copy the Public Admission Link (or click the eye icon to preview it) to share with prospective families. Under Class Availability for Public Admission, toggle which classes are currently open for applications and see live seat counts (e.g. "0/40 seats"). Under Auto-Notifications, choose whether to Send SMS on application received, Send Email on status change, and/or Send WhatsApp updates.',
+        "Open the Online Admission section to manage applications submitted directly by parents. You can copy the public admission link and share it with families. You can also choose which classes are accepting applications and see the available seats. The section also lets you turn on automatic SMS, email, or WhatsApp updates for applicants.",
       screenshot: {
         src: "/screenshots/school-admin/admissions/admission_onlineadmission .png",
-        alt: "Online Admission Portal tab with public link, class availability toggles, and auto-notification checkboxes",
+        alt: "Online Admission settings showing admission link, class availability, and notifications",
         caption:
-          "Turning off a class's toggle here removes it from the public application form without deleting anything.",
+          "Manage the public admission link, available classes, seats, and applicant notifications from here.",
+      },
+    },
+
+    {
+      title: "Choose which classes are open for admission",
+      description:
+        "Under Class Availability for Public Admission, you can decide which classes parents can select when applying online. Turn on a class to allow applications and turn it off when you no longer want to accept applications for that class. The available seat count is shown for each class.",
+      screenshot: {
+        src: "/screenshots/school-admin/admissions/admission_onlineadmission .png",
+        alt: "Class availability settings for online admissions",
+        caption:
+          "Turn classes on or off depending on whether you are accepting new applications.",
+      },
+    },
+
+    {
+      title: "Set up applicant notifications",
+      description:
+        "You can choose how applicants receive updates about their applications. You can enable SMS notifications when an application is received, email notifications when the application status changes, and WhatsApp updates. Turn on the options that your school wants to use.",
+      screenshot: {
+        src: "/screenshots/school-admin/admissions/admission_onlineadmission .png",
+        alt: "Automatic notification settings for admission applications",
+        caption:
+          "Automatic notifications help parents stay informed about their application status.",
       },
     },
   ],
 
   bestPractices: [
-    "Keep Class Availability toggles current — closing a class once it's full prevents overbooking through the public portal, since seat counts are tracked live.",
-    "Enable at least one Auto-Notification (SMS or Email) so applicants aren't left wondering about their application status after submitting.",
-    "Review Pending applications promptly — a backlog of pending admissions is easy to lose track of since they don't automatically escalate or expire.",
+    "Keep the available classes updated so parents only see classes that are currently accepting applications.",
+    "Review pending applications regularly so parents do not have to wait unnecessarily for a response.",
+    "Check student and parent information carefully before approving or rejecting an application.",
+    "Keep the number of available seats updated to avoid accepting more applications than the school can accommodate.",
+    "Enable automatic notifications so applicants receive updates about their applications.",
   ],
 
   commonErrors: [
     {
-      issue: "A class isn't showing up on the public admission form",
-      fix: "Check its toggle under Class Availability for Public Admission on the Online Admission tab — it must be enabled to appear as an option to applicants.",
+      issue: "A class is not showing on the online admission form.",
+      fix: "Open Online Admission and check the Class Availability section. Make sure the class is turned on so parents can select it when applying.",
     },
     {
-      issue: "Rejected an application by mistake",
-      fix: "There's no built-in \"undo\" shown for a rejection — contact the applicant to resubmit a new application if this happens, and double-check the student's name before clicking Reject Application.",
+      issue: "An application was rejected by mistake.",
+      fix: "Check the application details carefully before rejecting an application. If an application has already been rejected, there is no undo option shown in the system, so the applicant may need to submit a new application.",
+    },
+    {
+      issue: "Parents are not receiving application updates.",
+      fix: "Open the Online Admission section and check the notification settings. Make sure the required SMS, email, or WhatsApp notification option is enabled.",
     },
   ],
 
   faqs: [
     {
-      question:
-        "What's the difference between Admission Records and Online Admission?",
+      question: "What is the Admissions section used for?",
       answer:
-        "Admission Records is the list and review workflow for all applications, however they arrived. Online Admission is specifically the public-facing portal setup — the shareable link, which classes are open, and notification settings for applicants who apply themselves.",
+        "It is used to manage student applications. You can create applications yourself, receive applications from parents online, review applications, and approve or reject them.",
     },
     {
       question:
-        "Does approving an application automatically create a student record?",
+        "What is the difference between Admission Records and Online Admission?",
       answer:
-        "Check the Students module after approving an admission to confirm the new student appears there — if it doesn't create automatically in your version, you may need to add the student manually using the approved application's details.",
+        "Admission Records is where you view and manage student applications. Online Admission is where you manage the public admission form, available classes, seats, and notifications for parents.",
     },
     {
-      question: "Can I limit how many students can apply for a class online?",
+      question: "Can parents apply for admission online?",
       answer:
-        'Yes — the Class Availability for Public Admission section shows live seat counts (e.g. "0/40 seats") per class, which caps how many public applications that class will accept.',
+        "Yes. You can share the Public Admission Link with parents so they can submit an application online.",
+    },
+    {
+      question:
+        "Can I choose which classes are available for online admission?",
+      answer:
+        "Yes. The Class Availability section lets you turn online admission on or off for individual classes.",
+    },
+    {
+      question: "Can I send automatic updates to parents?",
+      answer:
+        "Yes. You can enable SMS, email, or WhatsApp notifications so applicants can receive updates about their applications.",
+    },
+    {
+      question: "What should I check before approving an application?",
+      answer:
+        "Check the student's personal information, academic details, parent or guardian information, address, and other submitted information before approving the application.",
     },
   ],
 

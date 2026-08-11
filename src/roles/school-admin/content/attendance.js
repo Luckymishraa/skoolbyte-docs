@@ -4,83 +4,101 @@ export const attendanceContent = {
   category: "HR & Attendance",
 
   overview:
-    "The Attendance Module is a unified system for tracking the daily presence of both Students and Teachers. It handles manual attendance, geo-fenced mobile clock-ins, and automated reporting.",
+    "The Attendance section is used to record and check the daily attendance of students and teachers. You can mark attendance manually, manage teacher clock-ins, check attendance history, and review attendance correction requests.",
 
   purpose:
-    "Centralizing student and teacher attendance in one module keeps daily presence data consistent and gives School Admins one place to mark, review, correct, and report on attendance — rather than separate disconnected systems for staff and students.",
+    "This section keeps student and teacher attendance information in one place. School administrators can mark attendance, check who is present or absent, review teacher attendance, and make sure attendance records are accurate.",
 
   steps: [
     {
       title: "Open Attendance Management",
       description:
-        'From the sidebar, click Attendance under HR & Attendance. The header shows a live summary (teacher count, current date) and has four tabs: Overview, Students, Teachers, and Timesheets, plus a "How it Works" guide.',
+        'From the left-side menu, click Attendance. You will see the current date, teacher information, and four sections: Overview, Students, Teachers, and Timesheets. You can also click "How it Works" if you need help understanding the Attendance section.',
       screenshot: {
         src: "/screenshots/school-admin/attendence/attencence_mainpage.png",
-        alt: "Attendance Management Overview tab with Present Today, Absent, and Pending Requests cards",
+        alt: "Attendance Management page showing attendance summary",
         caption:
-          "The Overview tab shows same-day stats and any pending Attendance Update Requests needing approval.",
+          "The Attendance page gives you a quick view of today's attendance and pending requests.",
       },
     },
+
     {
-      title: "Use the built-in How it Works guide",
+      title: "Use the How it Works guide",
       description:
-        'Click "How it Works" to open the "Attendance Module — How it Works" guide, covering Module Overview, Student Attendance, Teacher Attendance, Attendance Requests, and Pro Tips.',
+        'Click "How it Works" to open a simple guide explaining how attendance works. It covers student attendance, teacher attendance, attendance correction requests, and useful tips for managing attendance.',
       screenshot: {
         src: "/screenshots/school-admin/attendence/attendence_how_it_works.png",
-        alt: "Attendance Module How it Works guide showing Module Overview page",
+        alt: "Attendance Module How it Works guide",
         caption:
-          "The guide describes Teacher Tracking as covering detailed timesheets, geo-fencing, and shift tracking.",
+          "Use the guide if you need help understanding the different attendance features.",
       },
     },
+
     {
       title: "Mark student attendance",
       description:
-        'Switch to the Students tab. Filter by Class and Section, optionally search for a student, then check the students you want to mark, choose a status (e.g. Absent) from the dropdown, and click "Mark Attendance" to apply it to all selected students at once.',
+        'Open the Students section to mark student attendance. First, select the Class and Section. You can also search for a specific student. Select one or more students, choose their attendance status, such as Present or Absent, and click "Mark Attendance". The same status will be applied to all selected students.',
       screenshot: {
         src: "/screenshots/school-admin/attendence/attendence_student.png",
-        alt: "Students tab with Class 1 filter, one student selected, and status dropdown set to Absent",
+        alt: "Students attendance page with students selected",
         caption:
-          "Bulk marking: select multiple students, pick one status, and apply it to all of them in a single action.",
+          "Select multiple students and mark their attendance together to save time.",
       },
     },
+
     {
       title: "Mark teacher attendance",
       description:
-        'Switch to the Teachers tab. Filter by "All Subjects/Classes" or search for a teacher, select the teachers you want to mark, choose a status (e.g. Present), set Working Hours, and click "Mark Attendance." A GEO-FENCING toggle in the top-right controls whether teacher mobile clock-ins must occur within the school\'s geofenced area.',
+        'Open the Teachers section to mark teacher attendance. You can search for a teacher or view teachers by their subjects or classes. Select the teachers you want to mark, choose their attendance status, enter their working hours, and click "Mark Attendance". You can also adjust an individual teacher\'s timing using the "Set Timing" option.',
       screenshot: {
         src: "/screenshots/school-admin/attendence/attendence_markteacher.png",
-        alt: "Teachers tab with all three teachers selected, status Present, and Working Hours set to 8",
+        alt: "Teachers attendance page showing selected teachers",
         caption:
-          'Each teacher row also has an individual "Set Timing" button for adjusting their specific clock-in/out.',
+          "Mark attendance for multiple teachers at once or adjust an individual teacher's timing.",
       },
     },
+
     {
-      title: "Review a teacher's monthly timesheet",
+      title: "Use teacher location checking",
       description:
-        'Switch to the Timesheets tab. Select a teacher from the "Select Teacher" list to view their Attendance History for a chosen month — a calendar view color-coded by status, plus Present/Late/Absent totals for that month. Use the arrows next to the month/year to navigate between months.',
+        "The GEO-FENCING option controls whether teachers must be at the school location when they clock in using their mobile phone. When this option is enabled, teachers can only clock in when they are within the allowed school area.",
+      screenshot: {
+        src: "/screenshots/school-admin/attendence/attendence_markteacher.png",
+        alt: "Teacher attendance page with GEO-FENCING option",
+        caption:
+          "GEO-FENCING helps make sure teacher mobile clock-ins happen from the school location.",
+      },
+    },
+
+    {
+      title: "Check a teacher's monthly attendance",
+      description:
+        "Open the Timesheets section and select a teacher. You can choose a month to see that teacher's attendance history. The calendar shows which days the teacher was Present, Late, or Absent, along with the total number of days for each status. Use the month arrows to move between different months.",
       screenshot: {
         src: "/screenshots/school-admin/attendence/attendence_timesheet.png",
-        alt: "Timesheets tab showing Sushmita Mehra's August 2026 attendance calendar with 1 Present and 3 Absent",
+        alt: "Teacher monthly attendance history",
         caption:
-          "Green highlights present days, red highlights absent days — today's date gets a blue outline.",
+          "The Timesheet lets you review a teacher's attendance for a complete month.",
       },
     },
   ],
 
   bestPractices: [
-    "Mark attendance daily rather than batching it — the Overview tab's Present/Absent counts and Pending Requests are most useful when they reflect same-day reality.",
-    "Enable GEO-FENCING on the Teachers tab if you want to ensure staff clock in only from school premises via mobile.",
-    "Review Attendance Update Requests promptly on the Overview tab — teacher-submitted corrections stay pending until a School Admin approves them.",
+    "Mark attendance every day so that the attendance information stays accurate and up to date.",
+    "Check the Overview section regularly to see today's attendance and any requests that need your attention.",
+    "Use GEO-FENCING for teacher mobile clock-ins if you want to make sure teachers are clocking in from the school.",
+    "Review attendance correction requests regularly and approve them only after checking the details.",
+    "Check teacher Timesheets when you need to review attendance for a particular month.",
   ],
 
   commonErrors: [
     {
-      issue: 'A student or teacher shows "Not marked" for today',
-      fix: "This is the default state until someone actively selects them and clicks Mark Attendance — it doesn't default to Present or Absent automatically.",
+      issue: 'A student or teacher shows "Not marked" for today.',
+      fix: 'This means attendance has not been recorded yet. Select the student or teacher, choose the correct attendance status, and click "Mark Attendance".',
     },
     {
-      issue: "Teacher can't clock in via mobile even though they're at school",
-      fix: "Check the GEO-FENCING toggle and the school's configured location radius — an inaccurate or too-narrow geofence can incorrectly block valid clock-ins.",
+      issue: "A teacher cannot clock in from their mobile phone.",
+      fix: "Check whether GEO-FENCING is enabled and make sure the school's location and allowed area are set correctly. If the allowed area is too small or the location is incorrect, the teacher may not be able to clock in.",
     },
   ],
 
@@ -89,17 +107,27 @@ export const attendanceContent = {
       question:
         "Can I mark attendance for multiple students or teachers at once?",
       answer:
-        "Yes — check the boxes next to multiple rows on the Students or Teachers tab, pick one status from the dropdown, and click Mark Attendance to apply it to everyone selected.",
+        'Yes. Select multiple students or teachers, choose the attendance status, and click "Mark Attendance". The selected status will be applied to everyone you selected.',
     },
     {
-      question: "What's the difference between Overview and Timesheets?",
+      question: "What is the difference between Overview and Timesheets?",
       answer:
-        "Overview shows a same-day snapshot across everyone. Timesheets is a per-teacher, month-by-month historical view with a calendar and Present/Late/Absent totals.",
+        "Overview gives you a quick view of today's attendance for students and teachers. Timesheets lets you check one teacher's attendance history month by month.",
     },
     {
-      question: "How do teacher attendance correction requests work?",
+      question: "What happens if a teacher needs to correct their attendance?",
       answer:
-        "Teachers can request adjustments to their own clock-ins; these appear as Attendance Update Requests on the Overview tab and stay pending until a School Admin approves them.",
+        "Teachers can submit a request to correct their attendance. The request appears in the Attendance section for the School Admin to review. The change is only made after the School Admin approves the request.",
+    },
+    {
+      question: "What does GEO-FENCING mean?",
+      answer:
+        "GEO-FENCING checks the teacher's location when they clock in using their mobile phone. When it is enabled, the teacher needs to be within the allowed school area to clock in.",
+    },
+    {
+      question: "Can I see a teacher's attendance for previous months?",
+      answer:
+        "Yes. Open Timesheets, select the teacher, and use the month controls to view their attendance for different months.",
     },
   ],
 

@@ -4,141 +4,159 @@ export const communicationContent = {
   category: "Communication",
 
   overview:
-    "The Communication Hub allows School Admins to communicate with students, parents, and teachers from a single place. It provides an overview of messaging activity, supports sending broadcast messages, manages reusable templates, and keeps a complete history of all sent messages.",
+    "The Communication section helps you send and manage messages for students, parents, and teachers from one place. You can send announcements, create reusable message templates, and check the history of messages that have been sent.",
 
   purpose:
-    "Communication centralizes school notifications into four key areas: Dashboard for monitoring message activity, Send Message for broadcasting announcements, Templates for creating reusable message formats, and Message Log for reviewing message history and delivery records.",
+    "Use this section to manage all school messages in one place. You can check message activity, send announcements, create templates for messages you use regularly, and check whether sent messages were delivered successfully.",
 
   steps: [
     {
       title: "Open the Communication Hub",
       description:
-        "From the sidebar, click **Communication** under the Communication section. The module opens with four tabs: **Dashboard**, **Send Message**, **Templates**, and **Message Log**. Use the **How it Works** button for an interactive walkthrough or the refresh button to reload communication data.",
+        'From the left-side menu, click "Communication". You will see four sections: Dashboard, Send Message, Templates, and Message Log. You can also click "How it Works" if you need help using this section.',
     },
 
     {
-      title: "Review the Dashboard",
+      title: "Check the Communication Dashboard",
       description:
-        "The Dashboard provides a quick overview of communication activity. View the total number of messages sent, delivered, read, and failed. Below the summary cards, review recently created templates, recent message activity, and the currently available delivery channels.",
+        "The Dashboard gives you a quick view of your school's messaging activity. You can see how many messages were sent, delivered, read, or failed. You can also see recently created templates, recent messages, and the communication methods currently available.",
       screenshot: {
         src: "/screenshots/school-admin/communication/comunication_dashoard.png",
-        alt: "Communication dashboard showing message statistics, templates, recent activity, and available channels",
+        alt: "Communication Dashboard showing message statistics and recent activity",
         caption:
-          "Use the Dashboard to quickly monitor message activity and available communication channels.",
+          "The Dashboard gives you a quick overview of your school's communication activity.",
       },
     },
 
     {
-      title: "Send a broadcast message",
+      title: "Send a message",
       description:
-        "Open the **Send Message** tab to send announcements to students, teachers, parents, or a specific class. Select the target audience, choose the delivery channel and priority, enter a title and message body, then click **Send Message**.",
+        'Open the Send Message section to send an announcement. First, choose who should receive the message, such as students, parents, teachers, the whole school, or a specific class. Then choose how the message should be sent, select its priority, enter a title and message, and click "Send Message".',
       screenshot: {
         src: "/screenshots/school-admin/communication/communication_crateannouncement.png",
-        alt: "Send Broadcast Message form with audience selection, channel, priority, title, and message body",
+        alt: "Send Message form showing audience, channel, priority, title, and message fields",
         caption:
-          "Broadcast messages can be sent to the entire school or a selected audience.",
+          "Send an announcement to the whole school or to a specific group.",
       },
     },
 
     {
-      title: "Review message templates",
+      title: "Send a message to a specific class",
       description:
-        "Switch to the Templates tab to view all available message templates. Each template displays its name, internal code, subject, message body, template type, and supported delivery channels. These templates are reused for recurring school notifications.",
+        'If you only want to contact one class, select "Specific Class" as the audience. Then choose the class you want to contact and send the message. Only the selected class will receive the announcement.',
+    },
+
+    {
+      title: "View message templates",
+      description:
+        "Open the Templates section to see the message templates already available. Templates are ready-made messages that can be reused for common school notifications such as attendance, fee payments, exam results, and assignments. You can see the template name, subject, message, type, and available communication methods.",
       screenshot: {
         src: "/screenshots/school-admin/communication/communication_teplate_amiapge.png",
-        alt: "Templates tab displaying Exam Result, Attendance, Fee Payment, and Assignment templates",
+        alt: "Message Templates showing templates for common school notifications",
         caption:
-          "Templates save time by providing reusable message formats for common school events.",
+          "Templates save time by allowing you to reuse messages for common school communications.",
       },
     },
 
     {
-      title: "Create a template",
+      title: "Create a message template",
       description:
-        "Click **New Template** to create a reusable message template. Enter a Name, Code, Subject, and Message Body using placeholders such as {{student_name}} or {{guardian_name}} where appropriate. Select the Template Type and Delivery Channel, then click **Create**.",
+        'Click "New Template" to create a message that you can reuse later. Enter the template name, code, subject, and message. You can also add placeholders such as {{student_name}} or {{guardian_name}}. These placeholders are replaced with the correct student or parent information when the message is sent. Finally, choose the template type and communication method, then click "Create".',
       screenshot: {
         src: "/screenshots/school-admin/communication/communication_createtemplate.png",
-        alt: "Create Template dialog showing name, code, subject, body, type, and channel fields",
+        alt: "Create Template form showing template details and message fields",
         caption:
-          "Placeholder variables are automatically replaced with real student, guardian, or school information when messages are sent.",
+          "Create reusable messages and use placeholders to automatically add student or parent information.",
       },
     },
 
     {
-      title: "Delete a template",
+      title: "Delete a message template",
       description:
-        "Click the trash icon on any template card to permanently remove it from the system. Deleted templates can no longer be selected when sending future messages.",
+        "If you no longer need a template, click the trash icon on the template. You will need to confirm the deletion. Once deleted, the template cannot be used for future messages.",
     },
 
     {
-      title: "Review the Message Log",
+      title: "Check the Message Log",
       description:
-        "Open the Message Log tab to view every message sent from the Communication Hub. The log displays the delivery status, message title, recipient, delivery channel, and the date and time each message was sent.",
+        "Open the Message Log to see the messages that have been sent from the Communication section. You can check who received each message, the message title, how it was sent, its delivery status, and when it was sent.",
       screenshot: {
         src: "/screenshots/school-admin/communication/communication_messagelog_mainpage.png",
-        alt: "Message Log displaying sent messages with recipient, status, channel, and timestamp",
+        alt: "Message Log showing sent messages and delivery information",
         caption:
-          "Use the Message Log to audit communication history and verify successful message delivery.",
+          "Use the Message Log to check previous messages and their delivery status.",
       },
     },
 
     {
       title: "Use the How it Works guide",
       description:
-        "Click the **How it Works** button to open the built-in tutorial. The guide explains the Communication module, message broadcasting, templates, delivery tracking, and best practices through a step-by-step walkthrough.",
+        'Click "How it Works" to open the built-in guide. It explains how to send messages, use templates, check message delivery, and manage communication effectively.',
       screenshot: {
         src: "/screenshots/school-admin/communication/communication_hoeitworks.png",
-        alt: "Communication Module How it Works tutorial dialog",
+        alt: "Communication How it Works guide",
         caption:
-          "The built-in guide is useful for first-time administrators learning the Communication module.",
+          "Use the guide if you are new to the Communication section or need help with a feature.",
       },
     },
   ],
 
   bestPractices: [
-    "Create reusable templates for recurring notifications such as attendance alerts, fee confirmations, exam results, and assignment announcements.",
-    "Keep placeholder variables exactly as provided so recipient information is filled automatically during message delivery.",
-    "Use appropriate priorities to distinguish routine announcements from urgent notifications.",
-    "Review the Message Log after sending important announcements to confirm successful delivery.",
-    "Use clear and descriptive template names so administrators can quickly find the correct template.",
+    "Create templates for messages that you send regularly, such as attendance alerts, fee reminders, exam results, and assignment announcements.",
+    "Check the selected audience carefully before sending a message, especially when sending an announcement to the whole school.",
+    "Use clear and simple message titles so parents, students, and teachers can quickly understand the purpose of the message.",
+    "Check the Message Log after sending important messages to make sure they were delivered successfully.",
+    "Give templates clear names so you can easily find the right message when you need it.",
+    "Keep placeholder names exactly as provided so student and parent information is added correctly.",
   ],
 
   commonErrors: [
     {
       issue:
-        'Placeholder variables such as "{{student_name}}" appear exactly as typed in the received message.',
-      fix: "Ensure placeholder names are written exactly as supported by the system. Editing or misspelling a variable prevents it from being replaced with actual data.",
+        'The message shows "{{student_name}}" or another placeholder instead of the student name.',
+      fix: "Check that the placeholder was typed exactly as supported by the system. Do not change the spelling, spaces, or symbols in the placeholder.",
     },
     {
       issue: "A deleted template is needed again.",
-      fix: "Deleted templates cannot be restored. Use **Load Defaults** to recreate standard templates or create a new one manually.",
+      fix: 'Deleted templates cannot be restored. If the system provides a "Load Defaults" option, use it to bring back the standard templates, or create a new template manually.',
     },
     {
-      issue: "The wrong audience received a broadcast message.",
-      fix: "Always verify the selected Target Audience before clicking Send Message, especially when broadcasting to the entire school.",
+      issue: "The message was sent to the wrong group.",
+      fix: 'Always check the selected audience before clicking "Send Message". Pay special attention when sending messages to the entire school.',
     },
   ],
 
   faqs: [
     {
-      question: "What is the purpose of message templates?",
+      question: "What are message templates used for?",
       answer:
-        "Templates store reusable message formats for common school events, reducing the need to write the same notification repeatedly.",
+        "Templates are ready-made messages that you can reuse for common school notifications. They save time because you do not have to write the same message again and again.",
     },
     {
       question: "Can I send a message to only one class?",
       answer:
-        "Yes. Select **Specific Class** as the Target Audience, choose the desired class, and send the announcement only to that class.",
+        'Yes. Select "Specific Class" as the audience, choose the class, and send the message. Only the selected class will receive it.',
     },
     {
-      question: "What information is available in the Message Log?",
+      question: "Can I send messages to parents, students, and teachers?",
       answer:
-        "The Message Log records the delivery status, recipient, message title, delivery channel, and timestamp for every sent message.",
+        "Yes. When creating a message, you can choose the appropriate audience based on the communication options available in your school.",
     },
     {
-      question: "What do the channel icons on a template represent?",
+      question: "What can I see in the Message Log?",
       answer:
-        "They indicate which communication channels the template supports, such as in-app notifications, email, SMS, or all available channels.",
+        "The Message Log shows the messages that were sent, who received them, how they were sent, their delivery status, and the date and time they were sent.",
+    },
+    {
+      question:
+        "What are the icons or options for communication methods on a template?",
+      answer:
+        "They show which communication methods can be used with that template, such as in-app notifications, email, or SMS.",
+    },
+    {
+      question: "What are placeholders such as {{student_name}}?",
+      answer:
+        "Placeholders are special fields used to automatically add information when a message is sent. For example, {{student_name}} can be replaced with the student's actual name.",
     },
   ],
 
