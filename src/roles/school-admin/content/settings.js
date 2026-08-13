@@ -11,26 +11,14 @@ export const settingsContent = {
 
   steps: [
     {
-      title: "Open the Settings page",
+      title: "Open and manage the General settings",
       description:
-        'From the left-side menu, go to the System section and click "Settings". The Settings page contains four main sections: General, Account, Geo Fencing, and Security. Select a section from the settings menu to view or update its configuration.',
+        'From the left-side menu, go to the System section and click "Settings". Select the "General" section to manage the School Profile. Here you can view and update the school name, academic year, maximum file upload size, and custom domain or subdomain. The maximum file upload size controls the maximum size of a single file that can be uploaded in the Gallery / Documents section for the school.',
       screenshot: {
-        src: "/screenshots/school-admin/settings_general.png",
-        alt: "Settings page showing the General settings section",
+        src: "/screenshots/school-admin/settings/settings_general.png",
+        alt: "General Settings page showing School Profile configuration",
         caption:
-          "The Settings page provides separate sections for school configuration, account settings, geo-fencing, and security.",
-      },
-    },
-
-    {
-      title: "Manage the school profile",
-      description:
-        'Open the "General" section to manage the School Profile. You can update the school name, academic year, maximum file upload size, and custom domain or subdomain. The maximum file upload size controls the maximum size of a single file that can be uploaded in the Gallery / Documents section for the school.',
-      screenshot: {
-        src: "/screenshots/school-admin/settings_general.png",
-        alt: "General settings showing School Profile configuration",
-        caption:
-          "The General section contains school profile information, file upload limits, custom domain settings, and fee setup options.",
+          "The General section allows you to manage school profile information, file upload limits, and custom domain settings.",
       },
     },
 
@@ -51,7 +39,7 @@ export const settingsContent = {
       description:
         'Open the "Account" section to view the currently signed-in account. The page displays the account email address and role. You can also use "Change Password" to secure the account with a new password or select "Sign Out" to end the current session.',
       screenshot: {
-        src: "/screenshots/school-admin/settings_account.png",
+        src: "/screenshots/school-admin/settings/settings_account.png",
         alt: "Account settings showing signed-in user information and account actions",
         caption:
           "The Account section shows the current account and provides options to change the password or sign out.",
@@ -63,7 +51,7 @@ export const settingsContent = {
       description:
         'Open the "Geo Fencing" section to configure location-based attendance for teachers. When geo-fencing is enabled, teachers must be within the configured radius of the school location to clock in. The system uses GPS from the teacher\'s device.',
       screenshot: {
-        src: "/screenshots/school-admin/setting_geofencing.png",
+        src: "/screenshots/school-admin/settings/setting_geofencing.png",
         alt: "Geo Fencing settings showing attendance location configuration",
         caption:
           "Geo Fencing can require teachers to be on the school premises when marking attendance.",
@@ -93,7 +81,7 @@ export const settingsContent = {
       description:
         'Open the "Security" section to control how many devices students and teachers can be logged into simultaneously. If a user exceeds the configured limit, they will be prompted to log out of their other devices before continuing.',
       screenshot: {
-        src: "/screenshots/school-admin/settings_security.png",
+        src: "/screenshots/school-admin/settings/settings_security.png",
         alt: "Security settings showing student and teacher maximum device limits",
         caption:
           "Security settings control the maximum number of simultaneous devices for students and teachers.",

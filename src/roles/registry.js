@@ -17,6 +17,7 @@ import { attendanceContent } from "./school-admin/content/attendance.js";
 import { transportContent } from "./school-admin/content/transport.js";
 import { dashboardContent } from "./school-admin/content/dashboard.js";
 import { settingsContent } from "./school-admin/content/settings.js";
+import { galleryContent } from "./school-admin/content/gallery.js";
 
 export const roles = [
   {
@@ -52,7 +53,8 @@ export const roles = [
       { slug: "academics", content: academicsContent },
       { slug: "dashboard", content: dashboardContent },
       { slug: "settings", content: settingsContent },
-    ], 
+      { slug: "gallery", content: galleryContent },
+    ],
   },
   //   {
   //     key: "teacher",
