@@ -87,7 +87,7 @@ export const academicsContent = {
       description:
         'Open the Sections tab to see the sections created under each class, such as "Class 1 - A" or "Class 1 - B". Each section shows the number of students, maximum student capacity, assigned teacher, and room number. To create a new section, click "+ Add Section" and enter the class, section name, maximum number of students, class teacher, and room number.',
       screenshot: {
-        src: "/screenshots/school-admin/academics/academic_section_addsection.png",
+        src: "/screenshots/school-admin/academics/academic_section_maipage.png",
         alt: "Section Management showing sections for different classes",
         caption:
           "Each section belongs to a class and can have its own teacher and classroom.",
@@ -118,18 +118,6 @@ export const academicsContent = {
     },
 
     {
-      title: "View Subjects",
-      description:
-        "Open the Subjects tab to see the subjects available for different classes. You can view information such as the class, subject name, subject code, subject type, and status. Subjects are managed by the Super Admin, so they cannot be created or edited from this section.",
-      screenshot: {
-        src: "/screenshots/school-admin/academics/academic_subject.png",
-        alt: "Subjects list showing subjects for different classes",
-        caption:
-          "The Subjects section lets you view the subjects available for your school.",
-      },
-    },
-
-    {
       title: "Delete a Section",
       description:
         'To remove a section, click the trash icon on the section. You will be asked to confirm the deletion. Check the section carefully and click "Delete" only if you are sure. Deleting a section cannot be undone.',
@@ -140,7 +128,17 @@ export const academicsContent = {
           "Make sure the section is no longer needed before deleting it.",
       },
     },
-
+    {
+      title: "View Subjects",
+      description:
+        "Open the Subjects tab to see the subjects available for different classes. You can view information such as the class, subject name, subject code, subject type, and status. Subjects are managed by the Super Admin, so they cannot be created or edited from this section.",
+      screenshot: {
+        src: "/screenshots/school-admin/academics/academic_subject.png",
+        alt: "Subjects list showing subjects for different classes",
+        caption:
+          "The Subjects section lets you view the subjects available for your school.",
+      },
+    },
     {
       title: "Assign Subjects to Classes",
       description:

@@ -92,6 +92,12 @@ export const studentsContent = {
       title: "Check deletion requests",
       description:
         'Click "Deletion Requests" on the Students page to see the requests you have submitted. You can check the student\'s name, who submitted the request, its current status, the date it was submitted, and the Request ID. The status will change after the Super Admin reviews the request.',
+      screenshot: {
+        src: "/screenshots/school-admin/student_deletionrequest.png",
+        alt: "Deletion Requests page showing submitted student deletion requests and their status",
+        caption:
+          "The Deletion Requests page shows submitted requests, their status, submission date, and Request ID.",
+      },
     },
   ],
 

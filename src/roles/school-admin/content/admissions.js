@@ -51,7 +51,7 @@ export const admissionsContent = {
       description:
         'After reviewing an application, you can choose "Approve Application" or "Reject Application." Approving accepts the application, while rejecting moves the application out of the pending list. Make sure the application details are correct before making your decision.',
       screenshot: {
-        src: "/screenshots/school-admin/admissions/admission_view.png",
+        src: "/screenshots/school-admin/admissions/approved_admission.png",
         alt: "Admission application with Approve and Reject buttons",
         caption:
           "Use the Approve or Reject button after checking the application details.",
@@ -63,7 +63,7 @@ export const admissionsContent = {
       description:
         "Open the Online Admission section to manage applications submitted directly by parents. You can copy the public admission link and share it with families. You can also choose which classes are accepting applications and see the available seats. The section also lets you turn on automatic SMS, email, or WhatsApp updates for applicants.",
       screenshot: {
-        src: "/screenshots/school-admin/admissions/admission_onlineadmission .png",
+        src: "/screenshots/school-admin/admissions/admission_onlineadmission.png",
         alt: "Online Admission settings showing admission link, class availability, and notifications",
         caption:
           "Manage the public admission link, available classes, seats, and applicant notifications from here.",
@@ -75,7 +75,7 @@ export const admissionsContent = {
       description:
         "Under Class Availability for Public Admission, you can decide which classes parents can select when applying online. Turn on a class to allow applications and turn it off when you no longer want to accept applications for that class. The available seat count is shown for each class.",
       screenshot: {
-        src: "/screenshots/school-admin/admissions/admission_onlineadmission .png",
+        src: "/screenshots/school-admin/admissions/admission_onlineadmission.png",
         alt: "Class availability settings for online admissions",
         caption:
           "Turn classes on or off depending on whether you are accepting new applications.",
@@ -87,7 +87,7 @@ export const admissionsContent = {
       description:
         "You can choose how applicants receive updates about their applications. You can enable SMS notifications when an application is received, email notifications when the application status changes, and WhatsApp updates. Turn on the options that your school wants to use.",
       screenshot: {
-        src: "/screenshots/school-admin/admissions/admission_onlineadmission .png",
+        src: "/screenshots/school-admin/admissions/admission_onlineadmission.png",
         alt: "Automatic notification settings for admission applications",
         caption:
           "Automatic notifications help parents stay informed about their application status.",

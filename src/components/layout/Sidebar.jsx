@@ -8,6 +8,7 @@ export default function Sidebar({
   onCloseMobileDrawer,
 }) {
   const [expandedIds, setExpandedIds] = useState({});
+
   const toggleExpanded = (slug) =>
     setExpandedIds((prev) => ({ ...prev, [slug]: !prev[slug] }));
 
@@ -25,6 +26,7 @@ export default function Sidebar({
           <p className="mb-3 px-3 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">
             {group.section}
           </p>
+
           <ul className="space-y-1">
             {group.items.map((item) => (
               <li key={item.slug}>
@@ -39,11 +41,15 @@ export default function Sidebar({
                         <item.icon size={22} strokeWidth={2} />
                         {item.title}
                       </span>
+
                       <ChevronDown
                         size={14}
-                        className={`transition-transform ${expandedIds[item.slug] ? "rotate-180" : ""}`}
+                        className={`transition-transform ${
+                          expandedIds[item.slug] ? "rotate-180" : ""
+                        }`}
                       />
                     </button>
+
                     {expandedIds[item.slug] && (
                       <ul className="ml-6 mt-1 space-y-1 border-l border-gray-200 pl-3 dark:border-gray-800">
                         {item.children.map((child) => (
@@ -80,9 +86,12 @@ export default function Sidebar({
 
   return (
     <>
-      <aside className="sticky top-16 hidden h-[calc(100vh-4rem)] w-72 shrink-0 overflow-y-auto border-r border-gray-200 bg-white lg:block dark:border-gray-800 dark:bg-gray-950">
+      {/* Desktop Sidebar */}
+      <aside className="sticky top-16 hidden h-[calc(100vh-4rem)] w-72 shrink-0 overflow-y-auto overscroll-contain border-r border-gray-200 bg-white lg:block dark:border-gray-800 dark:bg-gray-950">
         {navContent}
       </aside>
+
+      {/* Mobile Sidebar Drawer */}
       {isMobileDrawerOpen && (
         <div className="fixed inset-0 z-50 lg:hidden">
           <div
@@ -90,13 +99,16 @@ export default function Sidebar({
             onClick={onCloseMobileDrawer}
             aria-hidden="true"
           />
-          <aside className="absolute left-0 top-0 h-full w-72 bg-white shadow-xl dark:bg-gray-950">
+
+          <aside className="absolute left-0 top-0 h-full w-72 overflow-y-auto overscroll-contain bg-white shadow-xl dark:bg-gray-950">
             <div className="flex items-center justify-between border-b border-gray-200 px-4 py-4 dark:border-gray-800">
               <span className="text-sm font-semibold">Navigation</span>
+
               <button onClick={onCloseMobileDrawer} aria-label="Close menu">
                 <X size={18} />
               </button>
             </div>
+
             {navContent}
           </aside>
         </div>

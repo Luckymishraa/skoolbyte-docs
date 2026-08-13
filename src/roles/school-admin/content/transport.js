@@ -11,26 +11,14 @@ export const transportContent = {
 
   steps: [
     {
-      title: "Open Transport Management",
+      title: "Open and Check the Transport Dashboard",
       description:
-        'From the left-side menu, click Transport. You will see five sections: Dashboard, Vehicles, Drivers, Routes, and Students. You can also open the "How it Works" guide or refresh the transport information.',
+        'From the left-side menu, click Transport. You will see five sections: Dashboard, Vehicles, Drivers, Routes, and Students. The Transport Dashboard provides a quick overview of the school’s transport system, including the total number of vehicles, drivers and helpers, active routes, and students using transport. You can also see which driver, helper, and route are currently connected to each vehicle. From here, you can also open the "How it Works" guide or refresh the transport information.',
       screenshot: {
         src: "/screenshots/school-admin/transport/transport_dashboard.png",
-        alt: "Transport Dashboard showing vehicles, drivers, routes, and students",
+        alt: "Transport Dashboard showing navigation sections, transport summary, and vehicle information",
         caption:
-          "The Transport Dashboard gives you a quick overview of the school's transport system.",
-      },
-    },
-
-    {
-      title: "Check the Transport Dashboard",
-      description:
-        "The Dashboard shows a summary of your transport system, including the total number of vehicles, drivers and helpers, active routes, and students using transport. You can also see which driver, helper, and route are currently connected to each vehicle.",
-      screenshot: {
-        src: "/screenshots/school-admin/transport/transport_dashboard.png",
-        alt: "Transport Dashboard showing transport summary and vehicle information",
-        caption:
-          "Use the Dashboard to quickly check the current status of the school's transport system.",
+          "The Transport Dashboard gives you a quick overview of the school's transport system, including vehicles, staff, routes, and students.",
       },
     },
 
