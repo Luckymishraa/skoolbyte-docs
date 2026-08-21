@@ -69,7 +69,7 @@ export const navigation = [
       },
       {
         title: "Home Work",
-        slug: "home-work",
+        slug: "homework",
         icon: ClipboardCheck,
       },
       {

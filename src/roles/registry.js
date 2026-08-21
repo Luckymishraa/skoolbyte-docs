@@ -18,6 +18,7 @@ import { transportContent } from "./school-admin/content/transport.js";
 import { dashboardContent } from "./school-admin/content/dashboard.js";
 import { settingsContent } from "./school-admin/content/settings.js";
 import { galleryContent } from "./school-admin/content/gallery.js";
+import { homeworkContent } from "./school-admin/content/homework.js";
 
 export const roles = [
   {
@@ -54,6 +55,7 @@ export const roles = [
       { slug: "dashboard", content: dashboardContent },
       { slug: "settings", content: settingsContent },
       { slug: "gallery", content: galleryContent },
+      { slug: "homework", content: homeworkContent },
     ],
   },
   //   {
